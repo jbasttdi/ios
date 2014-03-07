@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
 		F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */; };
@@ -16,7 +17,6 @@
 		F8F0BF1E18C94FD6005D3A5C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F0BF1C18C94FD6005D3A5C /* Main_iPhone.storyboard */; };
 		F8F0BF2118C94FD6005D3A5C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F0BF1F18C94FD6005D3A5C /* Main_iPad.storyboard */; };
 		F8F0BF2418C94FD6005D3A5C /* MusioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */; };
-		F8F0BF2618C94FD6005D3A5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F0BF2518C94FD6005D3A5C /* Images.xcassets */; };
 		F8F0BF2D18C94FD6005D3A5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF2C18C94FD6005D3A5C /* XCTest.framework */; };
 		F8F0BF2E18C94FD6005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF2F18C94FD6005D3A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F81217F418C955F800FD5FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,7 +50,6 @@
 		F8F0BF2018C94FD6005D3A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		F8F0BF2218C94FD6005D3A5C /* MusioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusioViewController.h; sourceTree = "<group>"; };
 		F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusioViewController.m; sourceTree = "<group>"; };
-		F8F0BF2518C94FD6005D3A5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8F0BF2B18C94FD6005D3A5C /* MusioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF2C18C94FD6005D3A5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F8F0BF3418C94FD6005D3A5C /* MusioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusioTests-Info.plist"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				F8F0BF1F18C94FD6005D3A5C /* Main_iPad.storyboard */,
 				F8F0BF2218C94FD6005D3A5C /* MusioViewController.h */,
 				F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */,
-				F8F0BF2518C94FD6005D3A5C /* Images.xcassets */,
+				F81217F418C955F800FD5FA8 /* Images.xcassets */,
 				F8F0BF1118C94FD5005D3A5C /* Supporting Files */,
 			);
 			path = Musio;
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F0BF2118C94FD6005D3A5C /* Main_iPad.storyboard in Resources */,
-				F8F0BF2618C94FD6005D3A5C /* Images.xcassets in Resources */,
+				F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */,
 				F8F0BF1E18C94FD6005D3A5C /* Main_iPhone.storyboard in Resources */,
 				F8F0BF1518C94FD5005D3A5C /* InfoPlist.strings in Resources */,
 			);
@@ -475,6 +475,7 @@
 				F8F0BF3E18C94FD6005D3A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F0BF3F18C94FD6005D3A5C /* Build configuration list for PBXNativeTarget "MusioTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				F8F0BF4118C94FD6005D3A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
