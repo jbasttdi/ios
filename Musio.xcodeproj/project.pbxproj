@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0925DBECB22B4DB1A6215C84 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 056956FADAA24D49B05AB375 /* libPods.a */; };
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		056956FADAA24D49B05AB375 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43724A9C6CA48CC8A3D2657 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F81217F418C955F800FD5FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8484821191D108F00FED21C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +70,7 @@
 				F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */,
 				F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */,
 				F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */,
+				0925DBECB22B4DB1A6215C84 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +94,7 @@
 				F8F0BF3218C94FD6005D3A5C /* MusioTests */,
 				F8F0BF0918C94FD5005D3A5C /* Frameworks */,
 				F8F0BF0818C94FD5005D3A5C /* Products */,
+				E43724A9C6CA48CC8A3D2657 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +114,7 @@
 				F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */,
 				F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */,
 				F8F0BF2C18C94FD6005D3A5C /* XCTest.framework */,
+				056956FADAA24D49B05AB375 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8F0BF3C18C94FD6005D3A5C /* Build configuration list for PBXNativeTarget "Musio" */;
 			buildPhases = (
+				55B6609865C94C85968C14F9 /* Check Pods Manifest.lock */,
 				F8F0BF0318C94FD5005D3A5C /* Sources */,
 				F8F0BF0418C94FD5005D3A5C /* Frameworks */,
 				F8F0BF0518C94FD5005D3A5C /* Resources */,
+				F1E5C1D1A9E9481EAD4E15F2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +260,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55B6609865C94C85968C14F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E5C1D1A9E9481EAD4E15F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8F0BF0318C94FD5005D3A5C /* Sources */ = {
@@ -394,6 +435,7 @@
 		};
 		F8F0BF3D18C94FD6005D3A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43724A9C6CA48CC8A3D2657 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -407,6 +449,7 @@
 		};
 		F8F0BF3E18C94FD6005D3A5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43724A9C6CA48CC8A3D2657 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
