@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
+		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
 		F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		F81217F418C955F800FD5FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8484821191D108F00FED21C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +116,7 @@
 		F8F0BF1018C94FD5005D3A5C /* Musio */ = {
 			isa = PBXGroup;
 			children = (
+				F8484821191D108F00FED21C /* Settings.bundle */,
 				F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */,
 				F8F0BF1A18C94FD6005D3A5C /* MusioAppDelegate.m */,
 				F8F0BF1C18C94FD6005D3A5C /* Main_iPhone.storyboard */,
@@ -235,6 +238,7 @@
 				F8F0BF2118C94FD6005D3A5C /* Main_iPad.storyboard in Resources */,
 				F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */,
 				F8F0BF1E18C94FD6005D3A5C /* Main_iPhone.storyboard in Resources */,
+				F8484822191D108F00FED21C /* Settings.bundle in Resources */,
 				F8F0BF1518C94FD5005D3A5C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
