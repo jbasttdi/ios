@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0925DBECB22B4DB1A6215C84 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 056956FADAA24D49B05AB375 /* libPods.a */; };
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
+		F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D2D6C191D177D008E059D /* MusioAPIClient.m */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		056956FADAA24D49B05AB375 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43724A9C6CA48CC8A3D2657 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F81217F418C955F800FD5FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F83D2D6B191D177D008E059D /* MusioAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioAPIClient.h; sourceTree = "<group>"; };
+		F83D2D6C191D177D008E059D /* MusioAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioAPIClient.m; sourceTree = "<group>"; };
 		F8484821191D108F00FED21C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 				F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */,
 				F81217F418C955F800FD5FA8 /* Images.xcassets */,
 				F8F0BF1118C94FD5005D3A5C /* Supporting Files */,
+				F83D2D6B191D177D008E059D /* MusioAPIClient.h */,
+				F83D2D6C191D177D008E059D /* MusioAPIClient.m */,
 			);
 			path = Musio;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F0BF1B18C94FD6005D3A5C /* MusioAppDelegate.m in Sources */,
+				F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */,
 				F8F0BF1718C94FD5005D3A5C /* main.m in Sources */,
 				F8F0BF2418C94FD6005D3A5C /* MusioViewController.m in Sources */,
 			);
