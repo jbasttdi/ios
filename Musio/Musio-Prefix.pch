@@ -15,4 +15,5 @@
     #import <Reachability/Reachability.h>
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <GroundControl/NSUserDefaults+GroundControl.h>
 #endif

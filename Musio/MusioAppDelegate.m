@@ -7,12 +7,16 @@
 //
 
 #import "MusioAppDelegate.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
 @implementation MusioAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    NSURL *URL = [NSURL URLWithString:@"http://musio.s3.amazonaws.com/defaults.plist"];
+    [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL];
     return YES;
 }
 							
