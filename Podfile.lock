@@ -18,16 +18,20 @@ PODS:
   - AFNetworking/UIKit (2.2.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - GroundControl (2.1.0):
+    - AFNetworking (~> 2.2)
   - JSONKit (1.5pre)
   - Reachability (3.1.1)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
+  - GroundControl (~> 2.1.0)
   - JSONKit (~> 1.4)
   - Reachability (~> 3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  GroundControl: 6c9ad5f196e61ada7624d5acfbfe0f714d6c7e27
   JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
 

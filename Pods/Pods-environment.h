@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 2
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
+// GroundControl
+#define COCOAPODS_POD_AVAILABLE_GroundControl
+#define COCOAPODS_VERSION_MAJOR_GroundControl 2
+#define COCOAPODS_VERSION_MINOR_GroundControl 1
+#define COCOAPODS_VERSION_PATCH_GroundControl 0
+
 // JSONKit
 #define COCOAPODS_POD_AVAILABLE_JSONKit
 // This library does not follow semantic-versioning,
