@@ -17,9 +17,23 @@
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     NSURL *URL = [NSURL URLWithString:@"http://musio.s3.amazonaws.com/defaults.plist"];
     [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
     return YES;
+
 }
-							
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"application:didRegisterForRemoteNotificationsWithDeviceToken: %@", deviceToken);
+    
+    // Register the device token with a webservice
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"Error: %@", error);
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
