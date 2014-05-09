@@ -51,7 +51,7 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
          success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
          failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
     
-    NSString* path = [NSString stringWithFormat:@"api/v1/inbox.json"];
+    NSString* path = [NSString stringWithFormat:@"api/v1/%@/inbox.json", user_uuid];
     [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
             success(task, responseObject);
