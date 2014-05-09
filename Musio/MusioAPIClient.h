@@ -17,4 +17,10 @@ extern NSString * const kMusioBaseURLString;
 - (void)getInbox:(NSString *)user_uuid
         success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
         failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+- (void)postAPNToken:(NSString *)token
+                  to:(NSString *)user_uuid
+             success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
+             failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
+
 @end

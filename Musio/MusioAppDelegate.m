@@ -8,6 +8,7 @@
 
 #import "MusioAppDelegate.h"
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+#import "MusioAPIClient.h"
 
 @implementation MusioAppDelegate
 
@@ -25,6 +26,17 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
     NSLog(@"application:didRegisterForRemoteNotificationsWithDeviceToken: %@", deviceToken);
+    MusioAPIClient *client = [MusioAPIClient sharedClient];
+    NSString *deviceTokenString = [[NSString alloc] initWithData:deviceToken encoding:NSUTF8StringEncoding];
+    
+    [client postAPNToken:deviceTokenString
+                      to:@"43834c5c-bcbb-40f2-9ed4-444ba301946f"
+                 success:^(NSURLSessionDataTask *task, id responseObject) {
+                     NSLog(@"Success -- %@", responseObject);
+                 }
+                 failure:^(NSURLSessionDataTask *task, NSError *error) {
+                     NSLog(@"Failure -- %@", error);
+                 }];
     
     // Register the device token with a webservice
 }

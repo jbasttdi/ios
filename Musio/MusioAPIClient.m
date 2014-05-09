@@ -29,7 +29,24 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
     self.requestSerializer = [AFJSONRequestSerializer serializer];
     return self;
 }
-
+- (void)postAPNToken:(NSString *)token
+                  to:(NSString *)user_uuid
+             success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
+             failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
+    
+    NSString* path = [NSString stringWithFormat:@"api/v1/%@.json", user_uuid];
+    
+    [self PUT:path parameters:@{@"apntoken":token} success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            success(task, responseObject);
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) {
+            failure(task, error);
+        }
+    }];
+    
+}
 - (void)getInbox:(NSString *)user_uuid
          success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
          failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
