@@ -7,7 +7,7 @@
 //
 
 #import "MusioAPIClient.h"
-NSString * const kMusioBaseURLString = @"http://api.musio.co";
+NSString * const kMusioBaseURLString = @"http://localhost:5200";
 
 @implementation MusioAPIClient
     + (MusioAPIClient *)sharedClient {
@@ -34,9 +34,9 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
              failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
     
-    NSString* path = [NSString stringWithFormat:@"api/v1/%@.json", user_uuid];
+    NSString* path = [NSString stringWithFormat:@"api/v1/users/%@/apn.json", user_uuid];
     
-    [self PUT:path parameters:@{@"apntoken":token} success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self PATCH:path parameters:@{@"apntoken":token} success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
             success(task, responseObject);
         }
@@ -51,7 +51,8 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
          success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
          failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
     
-    NSString* path = [NSString stringWithFormat:@"api/v1/%@/inbox.json", user_uuid];
+    NSString* path =  @"api/v1/inbox.json";
+    
     [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
             success(task, responseObject);
