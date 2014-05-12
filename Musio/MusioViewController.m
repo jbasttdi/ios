@@ -28,6 +28,8 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docDirectory = [paths objectAtIndex:0];
     self.dataFilePath = [docDirectory stringByAppendingPathComponent:@"data"];
+    [self refreshData];
+}
 
 }
 
