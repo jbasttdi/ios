@@ -11,14 +11,27 @@
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
 		F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D2D6C191D177D008E059D /* MusioAPIClient.m */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
+		F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87B37B91920E1710041B4D9 /* Storyboard.storyboard */; };
+		F87B37BC1920E1F90041B4D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37BB1920E1F90041B4D9 /* Default-568h@2x.png */; };
+		F87B37C31920E45D0041B4D9 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C11920E45D0041B4D9 /* Main.png */; };
+		F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C21920E45D0041B4D9 /* Main@2x.png */; };
+		F87B37CE1920EC800041B4D9 /* Like.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C61920EC800041B4D9 /* Like.png */; };
+		F87B37CF1920EC800041B4D9 /* Like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C71920EC800041B4D9 /* Like@2x.png */; };
+		F87B37D01920EC800041B4D9 /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C81920EC800041B4D9 /* Menu.png */; };
+		F87B37D11920EC800041B4D9 /* Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C91920EC800041B4D9 /* Menu@2x.png */; };
+		F87B37D21920EC800041B4D9 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37CA1920EC800041B4D9 /* Settings.png */; };
+		F87B37D31920EC800041B4D9 /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37CB1920EC800041B4D9 /* Settings@2x.png */; };
+		F87B37D41920EC800041B4D9 /* Trash.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37CC1920EC800041B4D9 /* Trash.png */; };
+		F87B37D51920EC800041B4D9 /* Trash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37CD1920EC800041B4D9 /* Trash@2x.png */; };
+		F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D61920EFAA0041B4D9 /* TrackBackground.png */; };
+		F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */; };
+		F87B37DE1920F1CB0041B4D9 /* default.plist in Resources */ = {isa = PBXBuildFile; fileRef = F87B37DD1920F1CB0041B4D9 /* default.plist */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
 		F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */; };
 		F8F0BF1518C94FD5005D3A5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F0BF1318C94FD5005D3A5C /* InfoPlist.strings */; };
 		F8F0BF1718C94FD5005D3A5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0BF1618C94FD5005D3A5C /* main.m */; };
 		F8F0BF1B18C94FD6005D3A5C /* MusioAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0BF1A18C94FD6005D3A5C /* MusioAppDelegate.m */; };
-		F8F0BF1E18C94FD6005D3A5C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F0BF1C18C94FD6005D3A5C /* Main_iPhone.storyboard */; };
-		F8F0BF2118C94FD6005D3A5C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F0BF1F18C94FD6005D3A5C /* Main_iPad.storyboard */; };
 		F8F0BF2418C94FD6005D3A5C /* MusioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */; };
 		F8F0BF2D18C94FD6005D3A5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF2C18C94FD6005D3A5C /* XCTest.framework */; };
 		F8F0BF2E18C94FD6005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
@@ -44,6 +57,21 @@
 		F83D2D6B191D177D008E059D /* MusioAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioAPIClient.h; sourceTree = "<group>"; };
 		F83D2D6C191D177D008E059D /* MusioAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioAPIClient.m; sourceTree = "<group>"; };
 		F8484821191D108F00FED21C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F87B37B91920E1710041B4D9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F87B37BB1920E1F90041B4D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		F87B37C11920E45D0041B4D9 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		F87B37C21920E45D0041B4D9 /* Main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main@2x.png"; sourceTree = "<group>"; };
+		F87B37C61920EC800041B4D9 /* Like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Like.png; sourceTree = "<group>"; };
+		F87B37C71920EC800041B4D9 /* Like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like@2x.png"; sourceTree = "<group>"; };
+		F87B37C81920EC800041B4D9 /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+		F87B37C91920EC800041B4D9 /* Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu@2x.png"; sourceTree = "<group>"; };
+		F87B37CA1920EC800041B4D9 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		F87B37CB1920EC800041B4D9 /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
+		F87B37CC1920EC800041B4D9 /* Trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trash.png; sourceTree = "<group>"; };
+		F87B37CD1920EC800041B4D9 /* Trash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trash@2x.png"; sourceTree = "<group>"; };
+		F87B37D61920EFAA0041B4D9 /* TrackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackBackground.png; sourceTree = "<group>"; };
+		F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackBackground@2x.png"; sourceTree = "<group>"; };
+		F87B37DD1920F1CB0041B4D9 /* default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default.plist; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,8 +82,6 @@
 		F8F0BF1818C94FD6005D3A5C /* Musio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Musio-Prefix.pch"; sourceTree = "<group>"; };
 		F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusioAppDelegate.h; sourceTree = "<group>"; };
 		F8F0BF1A18C94FD6005D3A5C /* MusioAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusioAppDelegate.m; sourceTree = "<group>"; };
-		F8F0BF1D18C94FD6005D3A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F8F0BF2018C94FD6005D3A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		F8F0BF2218C94FD6005D3A5C /* MusioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusioViewController.h; sourceTree = "<group>"; };
 		F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusioViewController.m; sourceTree = "<group>"; };
 		F8F0BF2B18C94FD6005D3A5C /* MusioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,9 +116,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F87B37C51920EC800041B4D9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F87B37D61920EFAA0041B4D9 /* TrackBackground.png */,
+				F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */,
+				F87B37C61920EC800041B4D9 /* Like.png */,
+				F87B37C71920EC800041B4D9 /* Like@2x.png */,
+				F87B37C81920EC800041B4D9 /* Menu.png */,
+				F87B37C91920EC800041B4D9 /* Menu@2x.png */,
+				F87B37CA1920EC800041B4D9 /* Settings.png */,
+				F87B37CB1920EC800041B4D9 /* Settings@2x.png */,
+				F87B37CC1920EC800041B4D9 /* Trash.png */,
+				F87B37CD1920EC800041B4D9 /* Trash@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		F8F0BEFE18C94FD5005D3A5C = {
 			isa = PBXGroup;
 			children = (
+				F87B37DD1920F1CB0041B4D9 /* default.plist */,
 				F8F0BF1018C94FD5005D3A5C /* Musio */,
 				F8F0BF3218C94FD6005D3A5C /* MusioTests */,
 				F8F0BF0918C94FD5005D3A5C /* Frameworks */,
@@ -125,17 +169,20 @@
 		F8F0BF1018C94FD5005D3A5C /* Musio */ = {
 			isa = PBXGroup;
 			children = (
+				F87B37C51920EC800041B4D9 /* Images */,
 				F8484821191D108F00FED21C /* Settings.bundle */,
 				F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */,
 				F8F0BF1A18C94FD6005D3A5C /* MusioAppDelegate.m */,
-				F8F0BF1C18C94FD6005D3A5C /* Main_iPhone.storyboard */,
-				F8F0BF1F18C94FD6005D3A5C /* Main_iPad.storyboard */,
 				F8F0BF2218C94FD6005D3A5C /* MusioViewController.h */,
 				F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */,
 				F81217F418C955F800FD5FA8 /* Images.xcassets */,
 				F8F0BF1118C94FD5005D3A5C /* Supporting Files */,
 				F83D2D6B191D177D008E059D /* MusioAPIClient.h */,
 				F83D2D6C191D177D008E059D /* MusioAPIClient.m */,
+				F87B37BB1920E1F90041B4D9 /* Default-568h@2x.png */,
+				F87B37C11920E45D0041B4D9 /* Main.png */,
+				F87B37C21920E45D0041B4D9 /* Main@2x.png */,
+				F87B37B91920E1710041B4D9 /* Storyboard.storyboard */,
 			);
 			path = Musio;
 			sourceTree = "<group>";
@@ -219,6 +266,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Musio Pty Ltd";
 				TargetAttributes = {
+					F8F0BF0618C94FD5005D3A5C = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					F8F0BF2A18C94FD6005D3A5C = {
 						TestTargetID = F8F0BF0618C94FD5005D3A5C;
 					};
@@ -248,11 +302,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F0BF2118C94FD6005D3A5C /* Main_iPad.storyboard in Resources */,
+				F87B37D41920EC800041B4D9 /* Trash.png in Resources */,
+				F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */,
+				F87B37D11920EC800041B4D9 /* Menu@2x.png in Resources */,
+				F87B37CF1920EC800041B4D9 /* Like@2x.png in Resources */,
+				F87B37D31920EC800041B4D9 /* Settings@2x.png in Resources */,
+				F87B37CE1920EC800041B4D9 /* Like.png in Resources */,
+				F87B37D01920EC800041B4D9 /* Menu.png in Resources */,
+				F87B37C31920E45D0041B4D9 /* Main.png in Resources */,
+				F87B37DE1920F1CB0041B4D9 /* default.plist in Resources */,
 				F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */,
-				F8F0BF1E18C94FD6005D3A5C /* Main_iPhone.storyboard in Resources */,
 				F8484822191D108F00FED21C /* Settings.bundle in Resources */,
 				F8F0BF1518C94FD5005D3A5C /* InfoPlist.strings in Resources */,
+				F87B37D51920EC800041B4D9 /* Trash@2x.png in Resources */,
+				F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */,
+				F87B37D21920EC800041B4D9 /* Settings.png in Resources */,
+				F87B37BC1920E1F90041B4D9 /* Default-568h@2x.png in Resources */,
+				F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */,
+				F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,22 +403,6 @@
 				F8F0BF1418C94FD5005D3A5C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F8F0BF1C18C94FD6005D3A5C /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8F0BF1D18C94FD6005D3A5C /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		F8F0BF1F18C94FD6005D3A5C /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8F0BF2018C94FD6005D3A5C /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		F8F0BF3518C94FD6005D3A5C /* InfoPlist.strings */ = {
@@ -449,6 +500,7 @@
 				GCC_PREFIX_HEADER = "Musio/Musio-Prefix.pch";
 				INFOPLIST_FILE = "Musio/Musio-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -463,6 +515,7 @@
 				GCC_PREFIX_HEADER = "Musio/Musio-Prefix.pch";
 				INFOPLIST_FILE = "Musio/Musio-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
