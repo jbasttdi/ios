@@ -20,7 +20,12 @@
     // Override point for customization after application launch.
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     NSURL *URL = [NSURL URLWithString:@"https://s3.amazonaws.com/musio/default.plist"];
-    [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL];
+    [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL success:^(NSDictionary *defaults) {
+        NSLog(@"Defaults > %@", defaults);
+
+    } failure:^(NSError *error) {
+        NSLog(@"Error > %@ with user info %@.", error, [error userInfo]);
+    }];
     return YES;
 
 }
