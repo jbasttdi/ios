@@ -1,4 +1,7 @@
 *.xcuserstate
 *.xcuserstate
+*.DS_Store
 
 .DS_Store
+
+Musio/.DS_Store
