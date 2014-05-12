@@ -22,6 +22,17 @@
 {
     [super viewDidLoad];
     
+    if ([[NSFileManager defaultManager] fileExistsAtPath:self.dataFilePath]) {
+        self.arrTrackData = [[NSMutableArray alloc] initWithContentsOfFile:self.dataFilePath];
+    }
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docDirectory = [paths objectAtIndex:0];
+    self.dataFilePath = [docDirectory stringByAppendingPathComponent:@"data"];
+
+}
+
+- (void)refreshData
+{
     if (self.arrTrackData != nil) {
         self.arrTrackData = nil;
     }
