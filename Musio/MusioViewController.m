@@ -28,7 +28,11 @@
     MusioAPIClient *client = [MusioAPIClient sharedClient];
     [client getInbox:@"43834c5c-bcbb-40f2-9ed4-444ba301946f"
              success:^(NSURLSessionDataTask *task, id responseObject) {
-                 NSLog(@"Success -- %@", responseObject);
+                 self.arrTrackData = [[NSArray alloc] initWithArray:responseObject];
+                 if (![self.arrTrackData writeToFile:self.dataFilePath atomically:YES]) {
+                     NSLog(@"Couldn't save data.");
+                 }
+                 NSLog(@"Success -- %@", self.arrTrackData);
              }
              failure:^(NSURLSessionDataTask *task, NSError *error) {
                  NSLog(@"Failure -- %@", error);
