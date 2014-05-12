@@ -19,6 +19,9 @@
 {
     [super viewDidLoad];
     
+    if (self.arrTrackData != nil) {
+        self.arrTrackData = nil;
+    }
     MusioAPIClient *client = [MusioAPIClient sharedClient];
     [client getInbox:@"43834c5c-bcbb-40f2-9ed4-444ba301946f"
              success:^(NSURLSessionDataTask *task, id responseObject) {
