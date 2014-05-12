@@ -14,11 +14,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+
     // Override point for customization after application launch.
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-    NSURL *URL = [NSURL URLWithString:@"http://musio.s3.amazonaws.com/defaults.plist"];
+    NSURL *URL = [NSURL URLWithString:@"https://s3.amazonaws.com/musio/default.plist"];
     [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL];
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
     return YES;
 
 }
