@@ -31,6 +31,9 @@
     [self refreshData];
 }
 
+- (void)loadTracksIntoViews
+{
+    NSLog(@"Loading Tracks Into Views -- %@", [[self arrTrackData] objectAtIndex:0] );
 }
 
 - (void)refreshData
@@ -46,6 +49,7 @@
                  if (![self.arrTrackData writeToFile:self.dataFilePath atomically:YES]) {
                      NSLog(@"Couldn't save data.");
                  }
+                 [self loadTracksIntoViews];
                  NSLog(@"Success -- %@", self.arrTrackData);
              }
              failure:^(NSURLSessionDataTask *task, NSError *error) {

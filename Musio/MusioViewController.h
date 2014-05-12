@@ -10,4 +10,5 @@
 
 @interface MusioViewController : UIViewController
 - (void) refreshData;
+- (void) loadTracksIntoViews;
 @end
