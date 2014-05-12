@@ -10,25 +10,26 @@
 NSString * const kMusioBaseURLString = @"http://localhost:5200";
 
 @implementation MusioAPIClient
-    + (MusioAPIClient *)sharedClient {
-        static MusioAPIClient *_sharedClient = nil;
-        static dispatch_once_t oncePredicate;
-        dispatch_once(&oncePredicate, ^{
-            _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kMusioBaseURLString]];
-        });
-        return _sharedClient;
-    }
+
++ (MusioAPIClient *)sharedClient {
+    static MusioAPIClient *_sharedClient = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&oncePredicate, ^{
+        _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kMusioBaseURLString]];
+    });
+    return _sharedClient;
+}
+
 - (instancetype)initWithBaseURL:(NSURL *)url {
-    
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;
     }
-    
     self.responseSerializer = [AFJSONResponseSerializer serializer];
     self.requestSerializer = [AFJSONRequestSerializer serializer];
     return self;
 }
+
 - (void)postAPNToken:(NSString *)token
                   to:(NSString *)user_uuid
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
@@ -45,8 +46,8 @@ NSString * const kMusioBaseURLString = @"http://localhost:5200";
             failure(task, error);
         }
     }];
-    
 }
+
 - (void)getInbox:(NSString *)user_uuid
          success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
          failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
