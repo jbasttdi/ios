@@ -11,6 +11,9 @@
 
 @interface MusioViewController ()
 
+@property (nonatomic, strong) NSArray *arrTrackData;
+@property (nonatomic, strong) NSString *dataFilePath;
+
 @end
 
 @implementation MusioViewController
