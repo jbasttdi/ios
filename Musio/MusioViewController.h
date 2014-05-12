@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MusioViewController : UIViewController
-
+- (void) refreshData;
 @end
