@@ -19,17 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-RaptureXML.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-UIImage+SVG.xcscheme</key>
+		<key>Pods-SVGKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2EE65CD64DA74D0F83CB2D9C</key>
+		<key>3ADDE97F4FC9457C9C3902E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3ADFBFCB2DA5442391BD5E41</key>
+		<key>423CB8A0B7D84CFEBEC762BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>418EFB2C9D904023B3BA3B90</key>
+		<key>8B2E0F6928A2429BA4107DF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5370FD4940ED4032A4342422</key>
+		<key>A69706D5A1D64BEBBA773B21</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A506D4CAA2984A96905C4CE1</key>
+		<key>B2CC10C2D04D4C2E9DC017CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4729241CE0B4D4C92619DB3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4FB51D929A44B759EF1F1AD</key>
+		<key>BE2E2DA783834BF4B38FD9BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

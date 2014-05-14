@@ -1,0 +1,1 @@
+../../SVGKit/Source/Unsorted/SVGKImage+SVGPathView.h

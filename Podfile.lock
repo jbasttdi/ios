@@ -21,24 +21,21 @@ PODS:
   - GroundControl (2.1.0):
     - AFNetworking (~> 2.2)
   - JSONKit (1.5pre)
-  - RaptureXML (1.0.1)
   - Reachability (3.1.1)
-  - UIImage+SVG (0.1):
-    - RaptureXML (~> 1.0.1)
+  - SVGKit (1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
   - GroundControl (~> 2.1.0)
   - JSONKit (~> 1.4)
   - Reachability (~> 3.0)
-  - UIImage+SVG (~> 0.1)
+  - SVGKit (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   GroundControl: 6c9ad5f196e61ada7624d5acfbfe0f714d6c7e27
   JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
-  RaptureXML: ef017fda62eb95c60300108366d1f0cd0c28cbd4
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  UIImage+SVG: 17986d35ced3cc203b2c65eb0d3b6e1434f03123
+  SVGKit: 6b3af07b4200f5b4beb6b81996b3b8e985936cb9
 
 COCOAPODS: 0.32.1
