@@ -67,6 +67,7 @@
     UIView *progressBarView = [[UIView alloc] initWithFrame:progressBarFrame];
     [progressBarView setBackgroundColor:[UIColor colorWithHue:0.604 saturation:0.615 brightness:0.357 alpha:1.000]];
     [trackView addSubview: progressBarView];
+    [trackView setTag: 101010];
 
     [[self view] addSubview: trackView];
 }
