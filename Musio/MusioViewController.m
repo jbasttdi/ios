@@ -10,6 +10,7 @@
 #import "MusioAPIClient.h"
 #import "SVGKit/SVGKit.h"
 #import "SVGKFastImageView.h"
+#import <POP/POP.h>
 
 @interface MusioViewController ()
 
