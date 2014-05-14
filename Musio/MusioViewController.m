@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) NSArray *arrTrackData;
 @property (nonatomic, strong) NSString *dataFilePath;
+@property (nonatomic) CGPoint startDragLocation;
 
 @end
 
@@ -88,6 +89,30 @@
 {
     NSLog(@"image click");
 }
+
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [self view] ];
+    if ([[touch view] tag] == 101010) {
+        [[touch view] setCenter:location];
+    }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [self view] ];
+    if (location.x > 40 && location.x < (CGRectGetWidth(self.view.bounds) - 40)) {
+        if ([[touch view] tag] == 101010) {
+            [UIView beginAnimations:@"Dragging A DraggableView" context:nil];
+            [UIView setAnimationDuration:0.5];
+            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+            [[touch view] setCenter:CGPointMake(160, 285)];
+            [UIView commitAnimations];
+        }
+    }
+}
+
 
 - (void)refreshData
 {
