@@ -49,15 +49,6 @@
     [titleLabel setTextColor: [UIColor whiteColor]];
     [trackView addSubview:titleLabel];
 
-
-    NSString* waveform_url = [NSString stringWithFormat:@"http://musio.s3.amazonaws.com/%@.png", [trackData valueForKey:@"wavefile_uuid"] ];
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:waveform_url]]];
-    UIImageView *waveformImage =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,280,175)];
-    [waveformImage setImage: image];
-    [trackView addSubview:waveformImage];
-
-
-    // PROGRESS BAR
 //    PLAY BUTTON
     SVGKImage* playImage = [SVGKImage imageNamed:@"play-xl"];
     [playImage setSize:CGSizeMake(120, 120)];
@@ -78,6 +69,18 @@
     [trackView addSubview: progressBarView];
 
     [[self view] addSubview: trackView];
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    //    NSString* waveform_url = [NSString stringWithFormat:@"http://musio.s3.amazonaws.com/%@.png", [trackData valueForKey:@"wavefile_uuid"] ];
+    //    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:waveform_url]]];
+    //    UIImageView *waveformImage =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,280,175)];
+    //    [waveformImage setImage: image];
+    //    [trackView addSubview:waveformImage];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    NSLog(@"I have finished rotating");
 }
 
 -(void)playTouch:(UIGestureRecognizer *)recognizer
