@@ -33,7 +33,35 @@
 
 - (void)loadTracksIntoViews
 {
-    NSLog(@"Loading Tracks Into Views -- %@", [[self arrTrackData] objectAtIndex:0] );
+    NSDictionary* assignmentData = [[self arrTrackData] objectAtIndex:0];
+    NSDictionary* trackData = [assignmentData valueForKey:@"track"];
+
+    CGRect trackFrame = CGRectMake(20, 100, 280, 370);
+    UIView* trackView = [[UIView alloc] initWithFrame: trackFrame];
+    [trackView setBackgroundColor: [UIColor colorWithHue:0.000 saturation:0.000 brightness:0.173 alpha:1.000]];
+
+    // TRACK TITLE
+    CGRect titleLabelFrame = CGRectMake(20, 200, 240, 30);
+    UILabel* titleLabel = [[UILabel alloc] initWithFrame: titleLabelFrame];
+    [titleLabel setText: [trackData valueForKey:@"title"]];
+    [titleLabel setTextColor: [UIColor whiteColor]];
+    [trackView addSubview:titleLabel];
+
+
+    NSString* waveform_url = [NSString stringWithFormat:@"http://musio.s3.amazonaws.com/%@.png", [trackData valueForKey:@"wavefile_uuid"] ];
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:waveform_url]]];
+    UIImageView *waveformImage =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,280,175)];
+    [waveformImage setImage: image];
+    [trackView addSubview:waveformImage];
+
+
+    // PROGRESS BAR
+    CGRect progressBarFrame = CGRectMake(0, 180, 280, 10);
+    UIView *progressBarView = [[UIView alloc] initWithFrame:progressBarFrame];
+    [progressBarView setBackgroundColor:[UIColor colorWithHue:0.604 saturation:0.615 brightness:0.357 alpha:1.000]];
+    [trackView addSubview: progressBarView];
+
+    [[self view] addSubview: trackView];
 }
 
 - (void)refreshData
