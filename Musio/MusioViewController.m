@@ -8,6 +8,8 @@
 
 #import "MusioViewController.h"
 #import "MusioAPIClient.h"
+#import "SVGKit/SVGKit.h"
+#import "SVGKFastImageView.h"
 
 @interface MusioViewController ()
 
@@ -40,7 +42,7 @@
     UIView* trackView = [[UIView alloc] initWithFrame: trackFrame];
     [trackView setBackgroundColor: [UIColor colorWithHue:0.000 saturation:0.000 brightness:0.173 alpha:1.000]];
 
-    // TRACK TITLE
+//    TRACK TITLE
     CGRect titleLabelFrame = CGRectMake(20, 200, 240, 30);
     UILabel* titleLabel = [[UILabel alloc] initWithFrame: titleLabelFrame];
     [titleLabel setText: [trackData valueForKey:@"title"]];
@@ -56,12 +58,31 @@
 
 
     // PROGRESS BAR
+//    PLAY BUTTON
+    SVGKImage* playImage = [SVGKImage imageNamed:@"play-xl"];
+    [playImage setSize:CGSizeMake(120, 120)];
+    SVGKImageView* playImageView = [[SVGKFastImageView alloc] initWithSVGKImage:playImage];
+    CGRect playImageFrame = CGRectMake(80, 20, 120, 120);
+    UIView* playImageContainer = [[UIView alloc] initWithFrame: playImageFrame];
+    [playImageContainer setUserInteractionEnabled:true];
+    UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(playTouch:)];
+    [singleTap setNumberOfTapsRequired:1];
+    [playImageContainer addGestureRecognizer:singleTap];
+    [playImageContainer addSubview:playImageView];
+    [trackView addSubview: playImageContainer];
+
+//    PROGRESS BAR
     CGRect progressBarFrame = CGRectMake(0, 180, 280, 10);
     UIView *progressBarView = [[UIView alloc] initWithFrame:progressBarFrame];
     [progressBarView setBackgroundColor:[UIColor colorWithHue:0.604 saturation:0.615 brightness:0.357 alpha:1.000]];
     [trackView addSubview: progressBarView];
 
     [[self view] addSubview: trackView];
+}
+
+-(void)playTouch:(UIGestureRecognizer *)recognizer
+{
+    NSLog(@"image click");
 }
 
 - (void)refreshData
