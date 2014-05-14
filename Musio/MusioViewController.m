@@ -78,10 +78,13 @@
                      NSLog(@"Couldn't save data.");
                  }
                  [self loadTracksIntoViews];
-                 NSLog(@"Success -- %@", self.arrTrackData);
              }
              failure:^(NSURLSessionDataTask *task, NSError *error) {
-                 NSLog(@"Failure -- %@", error);
+                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Something's Gone Horribly Wrong"
+                                                                     message:[error localizedDescription]
+                                                                    delegate:nil
+                                                           cancelButtonTitle:@"Ok"
+                                                           otherButtonTitles:nil];
              }];
 
 }
