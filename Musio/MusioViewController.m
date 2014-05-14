@@ -103,12 +103,29 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
-    CGPoint location = [touch locationInView: [self view] ];
-    if (location.x > 40 && location.x < (CGRectGetWidth(self.view.bounds) - 40)) {
+    CGPoint location = [touch locationInView: [self view]];
+     if (location.y < 40) {
+        NSLog(@"Share Track");
+         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sharing Track"
+                                                             message:@"Sharing Track"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"Ok"
+                                                   otherButtonTitles:nil];
+         [alertView show];
+        [[touch view] removeFromSuperview];
+    } else if (location.y > (CGRectGetHeight(self.view.bounds) - 40) ) {
+        NSLog(@"Save Track");
+        [[touch view] removeFromSuperview];
+    } else if (location.x < 40) {
+        NSLog(@"Dismiss Track");
+    } else if (location.x > (CGRectGetWidth(self.view.bounds) - 40) ) {
+        NSLog(@"Like Track");
+        [[touch view] removeFromSuperview];
+    } else {
         if ([[touch view] tag] == 101010) {
-            [UIView beginAnimations:@"Dragging A DraggableView" context:nil];
+            [UIView beginAnimations:@"" context:nil];
             [UIView setAnimationDuration:0.5];
-            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+            [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
             [[touch view] setCenter:CGPointMake(160, 285)];
             [UIView commitAnimations];
         }
