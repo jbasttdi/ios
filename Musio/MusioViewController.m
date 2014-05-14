@@ -36,41 +36,43 @@
 
 - (void)loadTracksIntoViews
 {
-    NSDictionary* assignmentData = [[self arrTrackData] objectAtIndex:0];
-    NSDictionary* trackData = [assignmentData valueForKey:@"track"];
 
-    CGRect trackFrame = CGRectMake(20, 100, 280, 370);
-    UIView* trackView = [[UIView alloc] initWithFrame: trackFrame];
-    [trackView setBackgroundColor: [UIColor colorWithHue:0.000 saturation:0.000 brightness:0.173 alpha:1.000]];
+    for(NSDictionary* assignment in [self arrTrackData]) {
+        NSDictionary* trackData = [assignment valueForKey:@"track"];
 
-//    TRACK TITLE
-    CGRect titleLabelFrame = CGRectMake(20, 200, 240, 30);
-    UILabel* titleLabel = [[UILabel alloc] initWithFrame: titleLabelFrame];
-    [titleLabel setText: [trackData valueForKey:@"title"]];
-    [titleLabel setTextColor: [UIColor whiteColor]];
-    [trackView addSubview:titleLabel];
+        CGRect trackFrame = CGRectMake(20, 100, 280, 370);
+        UIView* trackView = [[UIView alloc] initWithFrame: trackFrame];
+        [trackView setBackgroundColor: [UIColor colorWithHue:0.000 saturation:0.000 brightness:0.173 alpha:1.000]];
 
-//    PLAY BUTTON
-    SVGKImage* playImage = [SVGKImage imageNamed:@"play-xl"];
-    [playImage setSize:CGSizeMake(120, 120)];
-    SVGKImageView* playImageView = [[SVGKFastImageView alloc] initWithSVGKImage:playImage];
-    CGRect playImageFrame = CGRectMake(80, 20, 120, 120);
-    UIView* playImageContainer = [[UIView alloc] initWithFrame: playImageFrame];
-    [playImageContainer setUserInteractionEnabled:true];
-    UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(playTouch:)];
-    [singleTap setNumberOfTapsRequired:1];
-    [playImageContainer addGestureRecognizer:singleTap];
-    [playImageContainer addSubview:playImageView];
-    [trackView addSubview: playImageContainer];
+    //    TRACK TITLE
+        CGRect titleLabelFrame = CGRectMake(20, 200, 240, 30);
+        UILabel* titleLabel = [[UILabel alloc] initWithFrame: titleLabelFrame];
+        [titleLabel setText: [trackData valueForKey:@"title"]];
+        [titleLabel setTextColor: [UIColor whiteColor]];
+        [trackView addSubview:titleLabel];
 
-//    PROGRESS BAR
-    CGRect progressBarFrame = CGRectMake(0, 180, 280, 10);
-    UIView *progressBarView = [[UIView alloc] initWithFrame:progressBarFrame];
-    [progressBarView setBackgroundColor:[UIColor colorWithHue:0.604 saturation:0.615 brightness:0.357 alpha:1.000]];
-    [trackView addSubview: progressBarView];
-    [trackView setTag: 101010];
+    //    PLAY BUTTON
+        SVGKImage* playImage = [SVGKImage imageNamed:@"play-xl"];
+        [playImage setSize:CGSizeMake(120, 120)];
+        SVGKImageView* playImageView = [[SVGKFastImageView alloc] initWithSVGKImage:playImage];
+        CGRect playImageFrame = CGRectMake(80, 20, 120, 120);
+        UIView* playImageContainer = [[UIView alloc] initWithFrame: playImageFrame];
+        [playImageContainer setUserInteractionEnabled:true];
+        UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(playTouch:)];
+        [singleTap setNumberOfTapsRequired:1];
+        [playImageContainer addGestureRecognizer:singleTap];
+        [playImageContainer addSubview:playImageView];
+        [trackView addSubview: playImageContainer];
 
-    [[self view] addSubview: trackView];
+    //    PROGRESS BAR
+        CGRect progressBarFrame = CGRectMake(0, 180, 280, 10);
+        UIView *progressBarView = [[UIView alloc] initWithFrame:progressBarFrame];
+        [progressBarView setBackgroundColor:[UIColor colorWithHue:0.604 saturation:0.615 brightness:0.357 alpha:1.000]];
+        [trackView addSubview: progressBarView];
+        [trackView setTag: 101010];
+
+        [[self view] addSubview: trackView];
+    }
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
