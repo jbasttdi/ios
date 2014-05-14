@@ -119,6 +119,7 @@
         [[touch view] removeFromSuperview];
     } else if (location.x < 40) {
         NSLog(@"Dismiss Track");
+        [[touch view] removeFromSuperview];
     } else if (location.x > (CGRectGetWidth(self.view.bounds) - 40) ) {
         NSLog(@"Like Track");
         [[touch view] removeFromSuperview];
