@@ -27,6 +27,48 @@
 		F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */; };
 		F87B37DE1920F1CB0041B4D9 /* default.plist in Resources */ = {isa = PBXBuildFile; fileRef = F87B37DD1920F1CB0041B4D9 /* default.plist */; };
 		F87B37E1192100B70041B4D9 /* MusioTrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B37E0192100B70041B4D9 /* MusioTrackView.m */; };
+		F88663161923900100087D76 /* activity-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662EC1923900100087D76 /* activity-l.svg */; };
+		F88663171923900100087D76 /* activity-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662ED1923900100087D76 /* activity-s.svg */; };
+		F88663181923900100087D76 /* add-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662EE1923900100087D76 /* add-l.svg */; };
+		F88663191923900100087D76 /* add-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662EF1923900100087D76 /* add-s.svg */; };
+		F886631A1923900100087D76 /* compose-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F01923900100087D76 /* compose-l.svg */; };
+		F886631B1923900100087D76 /* compose-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F11923900100087D76 /* compose-s.svg */; };
+		F886631C1923900100087D76 /* download-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F21923900100087D76 /* download-l.svg */; };
+		F886631D1923900100087D76 /* download-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F31923900100087D76 /* download-s.svg */; };
+		F886631E1923900100087D76 /* edit-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F41923900100087D76 /* edit-l.svg */; };
+		F886631F1923900100087D76 /* edit-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F51923900100087D76 /* edit-s.svg */; };
+		F88663201923900100087D76 /* like-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F61923900100087D76 /* like-l.svg */; };
+		F88663211923900100087D76 /* like-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F71923900100087D76 /* like-s.svg */; };
+		F88663221923900100087D76 /* mixtape-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F81923900100087D76 /* mixtape-l.svg */; };
+		F88663231923900100087D76 /* mixtape-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662F91923900100087D76 /* mixtape-s.svg */; };
+		F88663241923900100087D76 /* next-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662FA1923900100087D76 /* next-l.svg */; };
+		F88663251923900100087D76 /* next-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662FB1923900100087D76 /* next-s.svg */; };
+		F88663261923900100087D76 /* pause-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662FC1923900100087D76 /* pause-l.svg */; };
+		F88663271923900100087D76 /* pause-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662FD1923900100087D76 /* pause-s.svg */; };
+		F88663281923900100087D76 /* pause-xl.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662FE1923900100087D76 /* pause-xl.svg */; };
+		F88663291923900100087D76 /* play-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88662FF1923900100087D76 /* play-l.svg */; };
+		F886632A1923900100087D76 /* play-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663001923900100087D76 /* play-s.svg */; };
+		F886632B1923900100087D76 /* play-xl.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663011923900100087D76 /* play-xl.svg */; };
+		F886632C1923900100087D76 /* previous-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663021923900100087D76 /* previous-l.svg */; };
+		F886632D1923900100087D76 /* previous-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663031923900100087D76 /* previous-s.svg */; };
+		F886632E1923900100087D76 /* reply-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663041923900100087D76 /* reply-l.svg */; };
+		F886632F1923900100087D76 /* reply-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663051923900100087D76 /* reply-s.svg */; };
+		F88663301923900100087D76 /* search-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663061923900100087D76 /* search-l.svg */; };
+		F88663311923900100087D76 /* search-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663071923900100087D76 /* search-s.svg */; };
+		F88663321923900100087D76 /* send-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663081923900100087D76 /* send-l.svg */; };
+		F88663331923900100087D76 /* send-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663091923900100087D76 /* send-s.svg */; };
+		F88663341923900100087D76 /* settings-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F886630A1923900100087D76 /* settings-l.svg */; };
+		F88663351923900100087D76 /* settings-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F886630B1923900100087D76 /* settings-s.svg */; };
+		F88663361923900100087D76 /* share-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F886630C1923900100087D76 /* share-l.svg */; };
+		F88663371923900100087D76 /* share-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F886630D1923900100087D76 /* share-s.svg */; };
+		F88663381923900100087D76 /* trash-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F886630E1923900100087D76 /* trash-l.svg */; };
+		F88663391923900100087D76 /* trash-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F886630F1923900100087D76 /* trash-s.svg */; };
+		F886633A1923900100087D76 /* votedown-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663101923900100087D76 /* votedown-l.svg */; };
+		F886633B1923900100087D76 /* votedown-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663111923900100087D76 /* votedown-s.svg */; };
+		F886633C1923900100087D76 /* votesoso-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663121923900100087D76 /* votesoso-l.svg */; };
+		F886633D1923900100087D76 /* votesoso-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663131923900100087D76 /* votesoso-s.svg */; };
+		F886633E1923900100087D76 /* voteup-l.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663141923900100087D76 /* voteup-l.svg */; };
+		F886633F1923900100087D76 /* voteup-s.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663151923900100087D76 /* voteup-s.svg */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
 		F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */; };
@@ -75,6 +117,48 @@
 		F87B37DD1920F1CB0041B4D9 /* default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default.plist; sourceTree = "<group>"; };
 		F87B37DF192100B70041B4D9 /* MusioTrackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioTrackView.h; sourceTree = "<group>"; };
 		F87B37E0192100B70041B4D9 /* MusioTrackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioTrackView.m; sourceTree = "<group>"; };
+		F88662EC1923900100087D76 /* activity-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "activity-l.svg"; sourceTree = "<group>"; };
+		F88662ED1923900100087D76 /* activity-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "activity-s.svg"; sourceTree = "<group>"; };
+		F88662EE1923900100087D76 /* add-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "add-l.svg"; sourceTree = "<group>"; };
+		F88662EF1923900100087D76 /* add-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "add-s.svg"; sourceTree = "<group>"; };
+		F88662F01923900100087D76 /* compose-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "compose-l.svg"; sourceTree = "<group>"; };
+		F88662F11923900100087D76 /* compose-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "compose-s.svg"; sourceTree = "<group>"; };
+		F88662F21923900100087D76 /* download-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "download-l.svg"; sourceTree = "<group>"; };
+		F88662F31923900100087D76 /* download-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "download-s.svg"; sourceTree = "<group>"; };
+		F88662F41923900100087D76 /* edit-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "edit-l.svg"; sourceTree = "<group>"; };
+		F88662F51923900100087D76 /* edit-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "edit-s.svg"; sourceTree = "<group>"; };
+		F88662F61923900100087D76 /* like-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "like-l.svg"; sourceTree = "<group>"; };
+		F88662F71923900100087D76 /* like-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "like-s.svg"; sourceTree = "<group>"; };
+		F88662F81923900100087D76 /* mixtape-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mixtape-l.svg"; sourceTree = "<group>"; };
+		F88662F91923900100087D76 /* mixtape-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mixtape-s.svg"; sourceTree = "<group>"; };
+		F88662FA1923900100087D76 /* next-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "next-l.svg"; sourceTree = "<group>"; };
+		F88662FB1923900100087D76 /* next-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "next-s.svg"; sourceTree = "<group>"; };
+		F88662FC1923900100087D76 /* pause-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pause-l.svg"; sourceTree = "<group>"; };
+		F88662FD1923900100087D76 /* pause-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pause-s.svg"; sourceTree = "<group>"; };
+		F88662FE1923900100087D76 /* pause-xl.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pause-xl.svg"; sourceTree = "<group>"; };
+		F88662FF1923900100087D76 /* play-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "play-l.svg"; sourceTree = "<group>"; };
+		F88663001923900100087D76 /* play-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "play-s.svg"; sourceTree = "<group>"; };
+		F88663011923900100087D76 /* play-xl.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "play-xl.svg"; sourceTree = "<group>"; };
+		F88663021923900100087D76 /* previous-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "previous-l.svg"; sourceTree = "<group>"; };
+		F88663031923900100087D76 /* previous-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "previous-s.svg"; sourceTree = "<group>"; };
+		F88663041923900100087D76 /* reply-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "reply-l.svg"; sourceTree = "<group>"; };
+		F88663051923900100087D76 /* reply-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "reply-s.svg"; sourceTree = "<group>"; };
+		F88663061923900100087D76 /* search-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "search-l.svg"; sourceTree = "<group>"; };
+		F88663071923900100087D76 /* search-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "search-s.svg"; sourceTree = "<group>"; };
+		F88663081923900100087D76 /* send-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "send-l.svg"; sourceTree = "<group>"; };
+		F88663091923900100087D76 /* send-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "send-s.svg"; sourceTree = "<group>"; };
+		F886630A1923900100087D76 /* settings-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "settings-l.svg"; sourceTree = "<group>"; };
+		F886630B1923900100087D76 /* settings-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "settings-s.svg"; sourceTree = "<group>"; };
+		F886630C1923900100087D76 /* share-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "share-l.svg"; sourceTree = "<group>"; };
+		F886630D1923900100087D76 /* share-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "share-s.svg"; sourceTree = "<group>"; };
+		F886630E1923900100087D76 /* trash-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trash-l.svg"; sourceTree = "<group>"; };
+		F886630F1923900100087D76 /* trash-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trash-s.svg"; sourceTree = "<group>"; };
+		F88663101923900100087D76 /* votedown-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "votedown-l.svg"; sourceTree = "<group>"; };
+		F88663111923900100087D76 /* votedown-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "votedown-s.svg"; sourceTree = "<group>"; };
+		F88663121923900100087D76 /* votesoso-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "votesoso-l.svg"; sourceTree = "<group>"; };
+		F88663131923900100087D76 /* votesoso-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "votesoso-s.svg"; sourceTree = "<group>"; };
+		F88663141923900100087D76 /* voteup-l.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "voteup-l.svg"; sourceTree = "<group>"; };
+		F88663151923900100087D76 /* voteup-s.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "voteup-s.svg"; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +220,55 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		F88662EB1923900100087D76 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				F88662EC1923900100087D76 /* activity-l.svg */,
+				F88662ED1923900100087D76 /* activity-s.svg */,
+				F88662EE1923900100087D76 /* add-l.svg */,
+				F88662EF1923900100087D76 /* add-s.svg */,
+				F88662F01923900100087D76 /* compose-l.svg */,
+				F88662F11923900100087D76 /* compose-s.svg */,
+				F88662F21923900100087D76 /* download-l.svg */,
+				F88662F31923900100087D76 /* download-s.svg */,
+				F88662F41923900100087D76 /* edit-l.svg */,
+				F88662F51923900100087D76 /* edit-s.svg */,
+				F88662F61923900100087D76 /* like-l.svg */,
+				F88662F71923900100087D76 /* like-s.svg */,
+				F88662F81923900100087D76 /* mixtape-l.svg */,
+				F88662F91923900100087D76 /* mixtape-s.svg */,
+				F88662FA1923900100087D76 /* next-l.svg */,
+				F88662FB1923900100087D76 /* next-s.svg */,
+				F88662FC1923900100087D76 /* pause-l.svg */,
+				F88662FD1923900100087D76 /* pause-s.svg */,
+				F88662FE1923900100087D76 /* pause-xl.svg */,
+				F88662FF1923900100087D76 /* play-l.svg */,
+				F88663001923900100087D76 /* play-s.svg */,
+				F88663011923900100087D76 /* play-xl.svg */,
+				F88663021923900100087D76 /* previous-l.svg */,
+				F88663031923900100087D76 /* previous-s.svg */,
+				F88663041923900100087D76 /* reply-l.svg */,
+				F88663051923900100087D76 /* reply-s.svg */,
+				F88663061923900100087D76 /* search-l.svg */,
+				F88663071923900100087D76 /* search-s.svg */,
+				F88663081923900100087D76 /* send-l.svg */,
+				F88663091923900100087D76 /* send-s.svg */,
+				F886630A1923900100087D76 /* settings-l.svg */,
+				F886630B1923900100087D76 /* settings-s.svg */,
+				F886630C1923900100087D76 /* share-l.svg */,
+				F886630D1923900100087D76 /* share-s.svg */,
+				F886630E1923900100087D76 /* trash-l.svg */,
+				F886630F1923900100087D76 /* trash-s.svg */,
+				F88663101923900100087D76 /* votedown-l.svg */,
+				F88663111923900100087D76 /* votedown-s.svg */,
+				F88663121923900100087D76 /* votesoso-l.svg */,
+				F88663131923900100087D76 /* votesoso-s.svg */,
+				F88663141923900100087D76 /* voteup-l.svg */,
+				F88663151923900100087D76 /* voteup-s.svg */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
 		F8F0BEFE18C94FD5005D3A5C = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +305,7 @@
 		F8F0BF1018C94FD5005D3A5C /* Musio */ = {
 			isa = PBXGroup;
 			children = (
+				F88662EB1923900100087D76 /* SVG */,
 				F87B37C51920EC800041B4D9 /* Images */,
 				F8484821191D108F00FED21C /* Settings.bundle */,
 				F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */,
@@ -307,24 +441,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88663371923900100087D76 /* share-s.svg in Resources */,
+				F886632B1923900100087D76 /* play-xl.svg in Resources */,
+				F886632D1923900100087D76 /* previous-s.svg in Resources */,
 				F87B37D41920EC800041B4D9 /* Trash.png in Resources */,
+				F88663321923900100087D76 /* send-l.svg in Resources */,
 				F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */,
+				F886632E1923900100087D76 /* reply-l.svg in Resources */,
+				F886632F1923900100087D76 /* reply-s.svg in Resources */,
+				F88663361923900100087D76 /* share-l.svg in Resources */,
+				F886633C1923900100087D76 /* votesoso-l.svg in Resources */,
+				F88663261923900100087D76 /* pause-l.svg in Resources */,
 				F87B37D11920EC800041B4D9 /* Menu@2x.png in Resources */,
+				F88663231923900100087D76 /* mixtape-s.svg in Resources */,
+				F886633A1923900100087D76 /* votedown-l.svg in Resources */,
 				F87B37CF1920EC800041B4D9 /* Like@2x.png in Resources */,
+				F886631A1923900100087D76 /* compose-l.svg in Resources */,
 				F87B37D31920EC800041B4D9 /* Settings@2x.png in Resources */,
+				F88663391923900100087D76 /* trash-s.svg in Resources */,
+				F88663301923900100087D76 /* search-l.svg in Resources */,
+				F886631F1923900100087D76 /* edit-s.svg in Resources */,
+				F88663221923900100087D76 /* mixtape-l.svg in Resources */,
+				F88663171923900100087D76 /* activity-s.svg in Resources */,
 				F87B37CE1920EC800041B4D9 /* Like.png in Resources */,
+				F88663331923900100087D76 /* send-s.svg in Resources */,
 				F87B37D01920EC800041B4D9 /* Menu.png in Resources */,
+				F88663181923900100087D76 /* add-l.svg in Resources */,
 				F87B37C31920E45D0041B4D9 /* Main.png in Resources */,
+				F88663341923900100087D76 /* settings-l.svg in Resources */,
 				F87B37DE1920F1CB0041B4D9 /* default.plist in Resources */,
 				F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */,
 				F8484822191D108F00FED21C /* Settings.bundle in Resources */,
 				F8F0BF1518C94FD5005D3A5C /* InfoPlist.strings in Resources */,
+				F88663311923900100087D76 /* search-s.svg in Resources */,
 				F87B37D51920EC800041B4D9 /* Trash@2x.png in Resources */,
+				F88663161923900100087D76 /* activity-l.svg in Resources */,
+				F886633B1923900100087D76 /* votedown-s.svg in Resources */,
+				F886632C1923900100087D76 /* previous-l.svg in Resources */,
+				F886633E1923900100087D76 /* voteup-l.svg in Resources */,
+				F886631B1923900100087D76 /* compose-s.svg in Resources */,
 				F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */,
+				F886631E1923900100087D76 /* edit-l.svg in Resources */,
+				F886633D1923900100087D76 /* votesoso-s.svg in Resources */,
 				F87B37D21920EC800041B4D9 /* Settings.png in Resources */,
+				F88663191923900100087D76 /* add-s.svg in Resources */,
 				F87B37BC1920E1F90041B4D9 /* Default-568h@2x.png in Resources */,
+				F88663271923900100087D76 /* pause-s.svg in Resources */,
+				F88663241923900100087D76 /* next-l.svg in Resources */,
+				F88663351923900100087D76 /* settings-s.svg in Resources */,
+				F88663201923900100087D76 /* like-l.svg in Resources */,
+				F886633F1923900100087D76 /* voteup-s.svg in Resources */,
+				F88663211923900100087D76 /* like-s.svg in Resources */,
+				F886631D1923900100087D76 /* download-s.svg in Resources */,
 				F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */,
+				F88663291923900100087D76 /* play-l.svg in Resources */,
+				F886632A1923900100087D76 /* play-s.svg in Resources */,
+				F88663251923900100087D76 /* next-s.svg in Resources */,
+				F88663281923900100087D76 /* pause-xl.svg in Resources */,
+				F88663381923900100087D76 /* trash-l.svg in Resources */,
 				F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */,
+				F886631C1923900100087D76 /* download-l.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
