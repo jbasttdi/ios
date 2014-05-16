@@ -64,6 +64,7 @@
 		F84FABF81925BAC2007B3FBB /* MusioUploadsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadsTableViewController.m; sourceTree = "<group>"; };
 		F84FABFA1925BC81007B3FBB /* MusioUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioUploadViewController.h; sourceTree = SOURCE_ROOT; };
 		F84FABFB1925BC81007B3FBB /* MusioUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadViewController.m; sourceTree = SOURCE_ROOT; };
+		F84FAC071925BFF6007B3FBB /* Musio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Musio.entitlements; sourceTree = "<group>"; };
 		F87B37B91920E1710041B4D9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F87B37C11920E45D0041B4D9 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
 		F87B37C21920E45D0041B4D9 /* Main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main@2x.png"; sourceTree = "<group>"; };
@@ -189,6 +190,7 @@
 				F84FABFA1925BC81007B3FBB /* MusioUploadViewController.h */,
 				F84FABFB1925BC81007B3FBB /* MusioUploadViewController.m */,
 				F88662EB1923900100087D76 /* SVG */,
+				F84FAC071925BFF6007B3FBB /* Musio.entitlements */,
 				F87B37C51920EC800041B4D9 /* Images */,
 				F8484821191D108F00FED21C /* Settings.bundle */,
 				F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */,
@@ -290,8 +292,12 @@
 				ORGANIZATIONNAME = "Musio Pty Ltd";
 				TargetAttributes = {
 					F8F0BF0618C94FD5005D3A5C = {
+						DevelopmentTeam = 3X2D26CY6D;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
 								enabled = 1;
 							};
 						};
@@ -522,10 +528,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Musio/Musio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Musio/Musio-Prefix.pch";
 				INFOPLIST_FILE = "Musio/Musio-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -537,10 +547,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Musio/Musio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Musio/Musio-Prefix.pch";
 				INFOPLIST_FILE = "Musio/Musio-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
