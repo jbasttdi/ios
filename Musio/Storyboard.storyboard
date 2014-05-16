@@ -56,35 +56,88 @@
             </objects>
             <point key="canvasLocation" x="220" y="-89"/>
         </scene>
-        <!--Musio Uploads Table View Controller-->
-        <scene sceneID="RQy-xH-nTf">
+        <!--Musio Uploads Table View Controller - Your Uploads-->
+        <scene sceneID="Fo2-Oc-LtV">
             <objects>
-                <tableViewController id="osx-yr-cO1" customClass="MusioUploadsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" id="JPN-od-pw5">
+                <tableViewController storyboardIdentifier="UploadsTable" autoresizesArchivedViewToFullSize="NO" id="X0z-2a-tzG" customClass="MusioUploadsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" id="i95-IE-8WB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrackTableCell" rowHeight="120" id="aVc-3G-xzi">
-                                <rect key="frame" x="0.0" y="22" width="320" height="120"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="DQR-SZ-s9Z" detailTextLabel="bLa-yU-qA9" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="6i6-fN-wEZ">
+                                <rect key="frame" x="0.0" y="86" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aVc-3G-xzi" id="K5j-if-ieE">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6i6-fN-wEZ" id="IVw-U8-r5w">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DQR-SZ-s9Z">
+                                            <rect key="frame" x="15" y="34" width="55" height="36"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bLa-yU-qA9">
+                                            <rect key="frame" x="15" y="70" width="32" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.12549020349979401" green="0.12549020349979401" blue="0.12549020349979401" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.12941177189350128" green="0.12941177189350128" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <segue destination="zBw-GT-Klc" kind="push" id="cEN-Bo-mAW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="osx-yr-cO1" id="iTz-qb-pWn"/>
-                            <outlet property="delegate" destination="osx-yr-cO1" id="TbY-wL-cd2"/>
+                            <outlet property="dataSource" destination="X0z-2a-tzG" id="RgI-Oj-qyr"/>
+                            <outlet property="delegate" destination="X0z-2a-tzG" id="Amm-zB-YIG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Your Uploads" id="a6s-xD-1sX"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yeG-ke-Qvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yky-CI-UGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="-229"/>
+            <point key="canvasLocation" x="1311" y="-201"/>
+        </scene>
+        <!--Musio Upload View Controller-->
+        <scene sceneID="HHh-YR-ew8">
+            <objects>
+                <viewController storyboardIdentifier="UploadView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zBw-GT-Klc" customClass="MusioUploadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="akm-Xc-lrA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Otd-aR-h26"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HP4-pF-jwO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bkT-Bf-KL2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2z9-VA-YYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="-201"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oOH-YI-09c">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="TIU-l8-4KC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Pd-69-1dF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="X0z-2a-tzG" kind="relationship" relationship="rootViewController" id="jSg-Wg-wgP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3GL-Ui-bei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-201"/>
         </scene>
     </scenes>
     <resources>
@@ -94,6 +147,7 @@
         <image name="Settings.png" width="25" height="25"/>
         <image name="Trash.png" width="34" height="40"/>
     </resources>
+    <color key="tintColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
