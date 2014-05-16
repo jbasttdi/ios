@@ -20,7 +20,7 @@ PODS:
     - AFNetworking/NSURLSession
   - GroundControl (2.1.0):
     - AFNetworking (~> 2.2)
-  - JSONKit (1.5pre)
+  - JSONKit (1.6)
   - pop (1.0.4)
   - Reachability (3.1.1)
   - SVGKit (1.0)
@@ -28,15 +28,19 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
   - GroundControl (~> 2.1.0)
-  - JSONKit (~> 1.4)
+  - JSONKit (from `https://gist.github.com/marcdown/5282955/raw/2a52cfd92f112f2a52669420c82c1bb1efd15d2a/JSONKit.podspec`)
   - pop (~> 1.0)
   - Reachability (~> 3.0)
   - SVGKit (~> 1.0)
 
+EXTERNAL SOURCES:
+  JSONKit:
+    :podspec: https://gist.github.com/marcdown/5282955/raw/2a52cfd92f112f2a52669420c82c1bb1efd15d2a/JSONKit.podspec
+
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   GroundControl: 6c9ad5f196e61ada7624d5acfbfe0f714d6c7e27
-  JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
+  JSONKit: 98c50800be324836e4443f6d22ff1324caffa608
   pop: 63a4f5e8942077fed2efe195036ecc572c71c48c
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   SVGKit: 6b3af07b4200f5b4beb6b81996b3b8e985936cb9
