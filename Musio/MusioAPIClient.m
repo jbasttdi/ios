@@ -35,9 +35,9 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
              failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
     
-    NSString* path = [NSString stringWithFormat:@"api/v1/users/%@/apn.json", user_uuid];
     
     [self PATCH:path parameters:@{@"apntoken":token} success:^(NSURLSessionDataTask *task, id responseObject) {
+    NSString* path = [NSString stringWithFormat:@"api/v1/users/%@.json", user_uuid];
         if (success) {
             success(task, responseObject);
         }

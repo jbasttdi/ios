@@ -22,7 +22,7 @@
     // Override point for customization after application launch.
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
 
-    NSURL *URL = [NSURL URLWithString:@"https://s3.amazonaws.com/musio/default.plist"];
+    NSURL *URL = [NSURL URLWithString:@"http://api.musio.co/api/v1/devices/iphone.plist"];
     [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL success:^(NSDictionary *defaults) {
         NSLog(@"Defaults > %@", defaults);
     } failure:^(NSError *error) {
