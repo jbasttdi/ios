@@ -13,6 +13,7 @@
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
 		F84FABF91925BAC2007B3FBB /* MusioUploadsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84FABF81925BAC2007B3FBB /* MusioUploadsTableViewController.m */; };
 		F84FABFC1925BC81007B3FBB /* MusioUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84FABFB1925BC81007B3FBB /* MusioUploadViewController.m */; };
+		F84FAC091925BFF6007B3FBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84FAC081925BFF6007B3FBB /* AudioToolbox.framework */; };
 		F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87B37B91920E1710041B4D9 /* Storyboard.storyboard */; };
 		F87B37C31920E45D0041B4D9 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C11920E45D0041B4D9 /* Main.png */; };
 		F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C21920E45D0041B4D9 /* Main@2x.png */; };
@@ -65,6 +66,7 @@
 		F84FABFA1925BC81007B3FBB /* MusioUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioUploadViewController.h; sourceTree = SOURCE_ROOT; };
 		F84FABFB1925BC81007B3FBB /* MusioUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadViewController.m; sourceTree = SOURCE_ROOT; };
 		F84FAC071925BFF6007B3FBB /* Musio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Musio.entitlements; sourceTree = "<group>"; };
+		F84FAC081925BFF6007B3FBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F87B37B91920E1710041B4D9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F87B37C11920E45D0041B4D9 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
 		F87B37C21920E45D0041B4D9 /* Main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main@2x.png"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			files = (
 				F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */,
 				F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */,
+				F84FAC091925BFF6007B3FBB /* AudioToolbox.framework in Frameworks */,
 				F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */,
 				0925DBECB22B4DB1A6215C84 /* libPods.a in Frameworks */,
 			);
