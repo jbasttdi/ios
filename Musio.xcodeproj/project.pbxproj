@@ -11,6 +11,7 @@
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
 		F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D2D6C191D177D008E059D /* MusioAPIClient.m */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
+		F84FABF91925BAC2007B3FBB /* MusioUploadsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84FABF81925BAC2007B3FBB /* MusioUploadsTableViewController.m */; };
 		F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87B37B91920E1710041B4D9 /* Storyboard.storyboard */; };
 		F87B37C31920E45D0041B4D9 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C11920E45D0041B4D9 /* Main.png */; };
 		F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37C21920E45D0041B4D9 /* Main@2x.png */; };
@@ -58,6 +59,8 @@
 		F83D2D6B191D177D008E059D /* MusioAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioAPIClient.h; sourceTree = "<group>"; };
 		F83D2D6C191D177D008E059D /* MusioAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioAPIClient.m; sourceTree = "<group>"; };
 		F8484821191D108F00FED21C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F84FABF71925BAC2007B3FBB /* MusioUploadsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioUploadsTableViewController.h; sourceTree = "<group>"; };
+		F84FABF81925BAC2007B3FBB /* MusioUploadsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadsTableViewController.m; sourceTree = "<group>"; };
 		F87B37B91920E1710041B4D9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F87B37C11920E45D0041B4D9 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
 		F87B37C21920E45D0041B4D9 /* Main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main@2x.png"; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				F8F0BF2218C94FD6005D3A5C /* MusioViewController.h */,
 				F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */,
 				F81217F418C955F800FD5FA8 /* Images.xcassets */,
+				F84FABF71925BAC2007B3FBB /* MusioUploadsTableViewController.h */,
+				F84FABF81925BAC2007B3FBB /* MusioUploadsTableViewController.m */,
 				F8F0BF1118C94FD5005D3A5C /* Supporting Files */,
 				F83D2D6B191D177D008E059D /* MusioAPIClient.h */,
 				F83D2D6C191D177D008E059D /* MusioAPIClient.m */,
@@ -386,6 +391,7 @@
 			files = (
 				F87B37E1192100B70041B4D9 /* MusioTrackView.m in Sources */,
 				F8F0BF1B18C94FD6005D3A5C /* MusioAppDelegate.m in Sources */,
+				F84FABF91925BAC2007B3FBB /* MusioUploadsTableViewController.m in Sources */,
 				F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */,
 				F8F0BF1718C94FD5005D3A5C /* main.m in Sources */,
 				F8F0BF2418C94FD6005D3A5C /* MusioViewController.m in Sources */,
