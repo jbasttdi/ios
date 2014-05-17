@@ -105,6 +105,31 @@
             </objects>
             <point key="canvasLocation" x="1311" y="-201"/>
         </scene>
+        <!--Musio Sign Up View Controller-->
+        <scene sceneID="3Co-IN-7hB">
+            <objects>
+                <viewController id="Dnb-mp-adT" customClass="MusioSignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1cZ-BF-rMP"/>
+                        <viewControllerLayoutGuide type="bottom" id="nCm-TW-YS0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D7l-TK-nej">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sign Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-to-Q2b">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yZE-bU-7au"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2d-XV-Pub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1721" y="-1643"/>
+        </scene>
         <!--Musio Sign In View Controller-->
         <scene sceneID="7yA-JL-Iez">
             <objects>
