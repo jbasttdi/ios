@@ -6,3 +6,4 @@ pod 'JSONKit', :podspec => 'https://gist.github.com/marcdown/5282955/raw/2a52cfd
 pod 'Reachability',  '~> 3.0'
 pod 'SVGKit', '~> 1.0'
 pod 'pop', '~> 1.0'
+pod 'UICKeyChainStore'
