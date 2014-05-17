@@ -75,23 +75,25 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
                   to:(NSString *)user_uuid
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
              failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
-    
-    NSString* path = [NSString stringWithFormat:@"api/v1/users/%@.json", user_uuid];
-    NSString* device = [NSString stringWithFormat:@"%@",  [[UIDevice currentDevice] model]];
 
-    if (device_token != NULL) {
-        [self PATCH:path
-         parameters:@{@"token": [Lockbox stringForKey:@"token"], @"user": @{@"device_token":device_token, @"device_kind": device }}
-            success:^(NSURLSessionDataTask *task, id responseObject) {
-                if (success) {
-                    success(task, responseObject);
+    if ([Lockbox stringForKey:@"uuid"] != nil) {
+        NSString* path = [NSString stringWithFormat:@"api/v1/users/%@.json", [Lockbox stringForKey:@"uuid"]];
+        NSString* device = [NSString stringWithFormat:@"%@",  [[UIDevice currentDevice] model]];
+
+        if (device_token != NULL) {
+            [self PATCH:path
+             parameters:@{@"token": [Lockbox stringForKey:@"token"], @"user": @{@"device_token":device_token, @"device_kind": device }}
+                success:^(NSURLSessionDataTask *task, id responseObject) {
+                    if (success) {
+                        success(task, responseObject);
+                    }
                 }
-            }
-            failure:^(NSURLSessionDataTask *task, NSError *error) {
-                if (failure) {
-                    failure(task, error);
-                }
-            }];
+                failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    if (failure) {
+                        failure(task, error);
+                    }
+                }];
+        }
     }
 }
 
