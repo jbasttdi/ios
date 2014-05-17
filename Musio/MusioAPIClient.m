@@ -7,7 +7,8 @@
 //
 
 #import "MusioAPIClient.h"
-NSString * const kMusioBaseURLString = @"http://api.musio.co";
+//NSString * const kMusioBaseURLString = @"http://api.musio.co";
+NSString * const kMusioBaseURLString = @"http://localhost:5100";
 
 @implementation MusioAPIClient
 
@@ -29,6 +30,46 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
     self.requestSerializer = [AFJSONRequestSerializer serializer];
     return self;
 }
+
+- (void)signUp:(NSString *)email
+  withPassword:(NSString *)password
+       andName:(NSString *)name
+       success:(void (^)(NSURLSessionDataTask *, id))success
+       failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+    [self POST:@"api/v1/users"
+    parameters:@{@"user": @{@"email": email, @"name": name, @"password": password}}
+       success:^(NSURLSessionDataTask *task, id responseObject) {
+           if (success) {
+               success(task, responseObject);
+           }
+       }
+       failure:^(NSURLSessionDataTask *task, NSError *error) {
+           if (failure) {
+               failure(task, error);
+           }
+       }];
+}
+
+- (void)signIn:(NSString *)email
+  withPassword:(NSString *)password
+       success:(void (^)(NSURLSessionDataTask *, id))success
+       failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+    [self POST:@"api/v1/sessions"
+    parameters:@{@"user": @{@"email": email, @"password": password}}
+       success:^(NSURLSessionDataTask *task, id responseObject) {
+           if (success) {
+               success(task, responseObject);
+           }
+       }
+       failure:^(NSURLSessionDataTask *task, NSError *error) {
+           if (failure) {
+               failure(task, error);
+           }
+       }];
+}
+
 
 - (void)postAPNToken:(NSString *)device_token
                   to:(NSString *)user_uuid
