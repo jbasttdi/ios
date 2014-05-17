@@ -92,7 +92,7 @@
 
 -(void)playTouch:(UIGestureRecognizer *)recognizer
 {
-    NSLog(@"image click");
+    NSLog(@"Play Audio");
 }
 
 
