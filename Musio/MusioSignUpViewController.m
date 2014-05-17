@@ -55,6 +55,7 @@
     [[self nameField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
     [[self nameField] setLeftViewMode: UITextFieldViewModeAlways];
     [[self nameField] setPlaceholder:@"Your Name"];
+    [[self nameField] setKeyboardAppearance: UIKeyboardAppearanceDark];
     [[self signUpForm] addSubview:[self nameField]];
 
     [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(20, 145, 270, 50)]];
@@ -68,6 +69,7 @@
     [[self emailField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
     [[self emailField] setLeftViewMode: UITextFieldViewModeAlways];
     [[self emailField] setPlaceholder:@"Your Email Address"];
+    [[self emailField] setKeyboardAppearance: UIKeyboardAppearanceDark];
     [[self signUpForm] addSubview:[self emailField]];
 
 
@@ -82,6 +84,7 @@
     [[self passwordField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
     [[self passwordField] setLeftViewMode: UITextFieldViewModeAlways];
     [[self passwordField] setPlaceholder:@"Your Password"];
+    [[self passwordField] setKeyboardAppearance: UIKeyboardAppearanceDark];
     [[self signUpForm] addSubview:[self passwordField]];
 
 
@@ -100,17 +103,19 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     CGRect rect = self.signUpForm.frame;
     [UIView beginAnimations:@"MoveView" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.3f];
-    self.signUpForm.frame = CGRectMake(0, 30, rect.size.width, rect.size.height);
+    self.signUpForm.frame = CGRectMake(0, 50, rect.size.width, rect.size.height);
     [UIView commitAnimations];
     [super touchesBegan:touches withEvent:event];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     CGRect rect = self.signUpForm.frame;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [UIView beginAnimations:@"MoveView" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.3f];

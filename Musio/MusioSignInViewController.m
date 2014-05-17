@@ -58,7 +58,7 @@
     [[self emailField] setAutocorrectionType:UITextAutocorrectionTypeNo];
     [[self emailField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
     [[self emailField] setLeftViewMode: UITextFieldViewModeAlways];
-
+    [[self emailField] setKeyboardAppearance: UIKeyboardAppearanceDark];
     [[self emailField] setPlaceholder:@"Your Email Address"];
     [[self view] addSubview:[self emailField]];
 
@@ -72,6 +72,7 @@
     [[self passwordField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
     [[self passwordField] setLeftViewMode: UITextFieldViewModeAlways];
     [[self passwordField] setPlaceholder:@"Your Password"];
+    [[self passwordField] setKeyboardAppearance: UIKeyboardAppearanceDark];
     [[self passwordField] setSecureTextEntry:YES];
 
     [[self view] addSubview:[self passwordField]];
