@@ -105,6 +105,72 @@
             </objects>
             <point key="canvasLocation" x="1311" y="-201"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Y2-tF-DxC">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="HRd-pw-NDj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Fdq-kI-Q56">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="O8j-hA-OZc">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="YC4-P5-F9R" kind="relationship" relationship="rootViewController" id="rGL-LZ-hN7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XJ-vc-Uar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-1259"/>
+        </scene>
+        <!--Musio Welcome View Controller-->
+        <scene sceneID="SUE-Z0-o5y">
+            <objects>
+                <viewController id="YC4-P5-F9R" customClass="MusioWelcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qla-Tf-I8Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="69s-i1-Jck"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qjZ-yU-uD4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pmc-SS-ANi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KH-OK-Epq">
+                                <rect key="frame" x="25" y="498" width="270" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btnSign In.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iNY-h2-W4V" kind="push" id="0pR-9y-7Xf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gII-Kx-mOP">
+                                <rect key="frame" x="25" y="259" width="270" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btnSign Up.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Dnb-mp-adT" kind="push" id="FDO-qg-65o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tN2-al-hNc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nW7-3X-tNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="-1259"/>
+        </scene>
         <!--Musio Sign Up View Controller-->
         <scene sceneID="3Co-IN-7hB">
             <objects>
