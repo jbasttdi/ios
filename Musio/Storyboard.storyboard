@@ -258,6 +258,50 @@
             <point key="canvasLocation" x="1727" y="-201"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="lR4-nB-BJk">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="29B-qr-nxT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zTQ-QW-aQA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o01-uD-O6r" kind="relationship" relationship="rootViewController" id="Uhc-38-sC7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxa-Zr-tUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684" y="-304"/>
+        </scene>
+        <!--Musio Root View Controller-->
+        <scene sceneID="jdp-dq-Nd4">
+            <objects>
+                <viewController id="o01-uD-O6r" customClass="MusioRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="seZ-Uz-FJz"/>
+                        <viewControllerLayoutGuide type="bottom" id="KtP-0G-3Kq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZfU-06-cyO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="w3M-tY-S24">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="919-5x-xub"/>
+                    <connections>
+                        <segue destination="HRd-pw-NDj" kind="modal" identifier="NotLoggedIn" animates="NO" id="rVq-8N-cVP"/>
+                        <segue destination="Xih-J2-5Fr" kind="modal" identifier="LoggedIn" animates="NO" id="p47-Kn-Z2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkb-Ca-cJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="-304"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="oOH-YI-09c">
             <objects>
                 <navigationController definesPresentationContext="YES" id="TIU-l8-4KC" sceneMemberID="viewController">

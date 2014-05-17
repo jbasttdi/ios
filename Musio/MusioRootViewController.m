@@ -1,18 +1,18 @@
 //
-//  MusioSignUpViewController.m
+//  MusioRootViewController.m
 //  Musio
 //
 //  Created by Oli Young on 17/05/2014.
 //  Copyright (c) 2014 Musio Pty Ltd. All rights reserved.
 //
 
-#import "MusioSignUpViewController.h"
+#import "MusioRootViewController.h"
 
-@interface MusioSignUpViewController ()
+@interface MusioRootViewController ()
 
 @end
 
-@implementation MusioSignUpViewController
+@implementation MusioRootViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,22 +22,15 @@
     }
     return self;
 }
-- (void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    [super viewWillDisappear:animated];
-}
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    if ([Lockbox stringForKey:@"token"] == nil) {
+        [self performSegueWithIdentifier:@"NotLoggedIn" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"LoggedIn" sender:self];
+    }
 }
 
 - (void)didReceiveMemoryWarning
