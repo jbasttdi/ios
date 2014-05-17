@@ -24,6 +24,7 @@ PODS:
   - pop (1.0.4)
   - Reachability (3.1.1)
   - SVGKit (1.0)
+  - UICKeyChainStore (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - pop (~> 1.0)
   - Reachability (~> 3.0)
   - SVGKit (~> 1.0)
+  - UICKeyChainStore
 
 EXTERNAL SOURCES:
   JSONKit:
@@ -44,5 +46,6 @@ SPEC CHECKSUMS:
   pop: 63a4f5e8942077fed2efe195036ecc572c71c48c
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   SVGKit: 6b3af07b4200f5b4beb6b81996b3b8e985936cb9
+  UICKeyChainStore: bf99e73603419dc706496dc23a3aae8a1c65cb83
 
 COCOAPODS: 0.32.1
