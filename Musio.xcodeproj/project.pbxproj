@@ -11,6 +11,21 @@
 		F81049B2192741AA00447671 /* MusioUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81049B1192741AA00447671 /* MusioUploadViewController.m */; };
 		F81049B5192752B400447671 /* neuzeitgroteskbold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */; };
 		F81049B6192752B400447671 /* neuzeitgroteskregular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */; };
+		F81049BF19275BD100447671 /* btnSign In.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049BB19275BD100447671 /* btnSign In.png */; };
+		F81049C019275BD100447671 /* btnSign In@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049BC19275BD100447671 /* btnSign In@2x.png */; };
+		F81049C119275BD100447671 /* btnSign Up.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049BD19275BD100447671 /* btnSign Up.png */; };
+		F81049C219275BD100447671 /* btnSign Up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049BE19275BD100447671 /* btnSign Up@2x.png */; };
+		F81049C419275CA200447671 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049C319275CA200447671 /* logo.png */; };
+		F81049C619275D3F00447671 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049C519275D3F00447671 /* Splash.png */; };
+		F81049C919275DFA00447671 /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049C719275DFA00447671 /* Welcome.png */; };
+		F81049CA19275DFA00447671 /* Welcome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049C819275DFA00447671 /* Welcome@2x.png */; };
+		F81049CD19275EBE00447671 /* MusioWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81049CC19275EBE00447671 /* MusioWelcomeViewController.m */; };
+		F81049D019275F3E00447671 /* MusioSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81049CF19275F3E00447671 /* MusioSignInViewController.m */; };
+		F81049D319275F4F00447671 /* MusioSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81049D219275F4F00447671 /* MusioSignUpViewController.m */; };
+		F81049D61927632E00447671 /* Sign In.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049D41927632E00447671 /* Sign In.png */; };
+		F81049D71927632E00447671 /* Sign In@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049D51927632E00447671 /* Sign In@2x.png */; };
+		F81049DA1927649500447671 /* Go.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049D81927649500447671 /* Go.png */; };
+		F81049DB1927649500447671 /* Go@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81049D91927649500447671 /* Go@2x.png */; };
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
 		F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D2D6C191D177D008E059D /* MusioAPIClient.m */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
@@ -60,6 +75,24 @@
 		F81049B1192741AA00447671 /* MusioUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadViewController.m; sourceTree = "<group>"; };
 		F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "neuzeitgroteskbold-webfont.ttf"; sourceTree = "<group>"; };
 		F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "neuzeitgroteskregular-webfont.ttf"; sourceTree = "<group>"; };
+		F81049BB19275BD100447671 /* btnSign In.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnSign In.png"; sourceTree = "<group>"; };
+		F81049BC19275BD100447671 /* btnSign In@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnSign In@2x.png"; sourceTree = "<group>"; };
+		F81049BD19275BD100447671 /* btnSign Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnSign Up.png"; sourceTree = "<group>"; };
+		F81049BE19275BD100447671 /* btnSign Up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnSign Up@2x.png"; sourceTree = "<group>"; };
+		F81049C319275CA200447671 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F81049C519275D3F00447671 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
+		F81049C719275DFA00447671 /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome.png; sourceTree = "<group>"; };
+		F81049C819275DFA00447671 /* Welcome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome@2x.png"; sourceTree = "<group>"; };
+		F81049CB19275EBE00447671 /* MusioWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioWelcomeViewController.h; sourceTree = "<group>"; };
+		F81049CC19275EBE00447671 /* MusioWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioWelcomeViewController.m; sourceTree = "<group>"; };
+		F81049CE19275F3E00447671 /* MusioSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioSignInViewController.h; sourceTree = "<group>"; };
+		F81049CF19275F3E00447671 /* MusioSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioSignInViewController.m; sourceTree = "<group>"; };
+		F81049D119275F4F00447671 /* MusioSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioSignUpViewController.h; sourceTree = "<group>"; };
+		F81049D219275F4F00447671 /* MusioSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioSignUpViewController.m; sourceTree = "<group>"; };
+		F81049D41927632E00447671 /* Sign In.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign In.png"; sourceTree = "<group>"; };
+		F81049D51927632E00447671 /* Sign In@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign In@2x.png"; sourceTree = "<group>"; };
+		F81049D81927649500447671 /* Go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Go.png; sourceTree = "<group>"; };
+		F81049D91927649500447671 /* Go@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Go@2x.png"; sourceTree = "<group>"; };
 		F81217F418C955F800FD5FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Musio/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		F83D2D6B191D177D008E059D /* MusioAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioAPIClient.h; sourceTree = "<group>"; };
 		F83D2D6C191D177D008E059D /* MusioAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioAPIClient.m; sourceTree = "<group>"; };
@@ -132,6 +165,12 @@
 				F8F0BF2318C94FD6005D3A5C /* MusioViewController.m */,
 				F84FABF71925BAC2007B3FBB /* MusioUploadsTableViewController.h */,
 				F84FABF81925BAC2007B3FBB /* MusioUploadsTableViewController.m */,
+				F81049CB19275EBE00447671 /* MusioWelcomeViewController.h */,
+				F81049CC19275EBE00447671 /* MusioWelcomeViewController.m */,
+				F81049CE19275F3E00447671 /* MusioSignInViewController.h */,
+				F81049CF19275F3E00447671 /* MusioSignInViewController.m */,
+				F81049D119275F4F00447671 /* MusioSignUpViewController.h */,
+				F81049D219275F4F00447671 /* MusioSignUpViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +189,16 @@
 		F87B37C51920EC800041B4D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F81049D81927649500447671 /* Go.png */,
+				F81049D91927649500447671 /* Go@2x.png */,
+				F81049BB19275BD100447671 /* btnSign In.png */,
+				F81049BC19275BD100447671 /* btnSign In@2x.png */,
+				F81049BD19275BD100447671 /* btnSign Up.png */,
+				F81049BE19275BD100447671 /* btnSign Up@2x.png */,
+				F81049C519275D3F00447671 /* Splash.png */,
+				F81049C719275DFA00447671 /* Welcome.png */,
+				F81049C819275DFA00447671 /* Welcome@2x.png */,
+				F81049C319275CA200447671 /* logo.png */,
 				F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */,
 				F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */,
 				F87B37C11920E45D0041B4D9 /* Main.png */,
@@ -163,6 +212,8 @@
 				F87B37C81920EC800041B4D9 /* Menu.png */,
 				F87B37C91920EC800041B4D9 /* Menu@2x.png */,
 				F87B37CA1920EC800041B4D9 /* Settings.png */,
+				F81049D41927632E00447671 /* Sign In.png */,
+				F81049D51927632E00447671 /* Sign In@2x.png */,
 				F87B37CB1920EC800041B4D9 /* Settings@2x.png */,
 				F87B37CC1920EC800041B4D9 /* Trash.png */,
 				F87B37CD1920EC800041B4D9 /* Trash@2x.png */,
@@ -346,24 +397,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81049C419275CA200447671 /* logo.png in Resources */,
 				F81049B6192752B400447671 /* neuzeitgroteskregular-webfont.ttf in Resources */,
 				F886632B1923900100087D76 /* play-xl.svg in Resources */,
 				F87B37D41920EC800041B4D9 /* Trash.png in Resources */,
 				F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */,
 				F87B37D11920EC800041B4D9 /* Menu@2x.png in Resources */,
+				F81049D61927632E00447671 /* Sign In.png in Resources */,
 				F87B37CF1920EC800041B4D9 /* Like@2x.png in Resources */,
 				F87B37D31920EC800041B4D9 /* Settings@2x.png in Resources */,
 				F87B37CE1920EC800041B4D9 /* Like.png in Resources */,
 				F87B37D01920EC800041B4D9 /* Menu.png in Resources */,
+				F81049CA19275DFA00447671 /* Welcome@2x.png in Resources */,
+				F81049C919275DFA00447671 /* Welcome.png in Resources */,
+				F81049DB1927649500447671 /* Go@2x.png in Resources */,
+				F81049C119275BD100447671 /* btnSign Up.png in Resources */,
 				F87B37C31920E45D0041B4D9 /* Main.png in Resources */,
+				F81049DA1927649500447671 /* Go.png in Resources */,
+				F81049D71927632E00447671 /* Sign In@2x.png in Resources */,
+				F81049C019275BD100447671 /* btnSign In@2x.png in Resources */,
 				F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */,
 				F8484822191D108F00FED21C /* Settings.bundle in Resources */,
 				F8F0BF1518C94FD5005D3A5C /* InfoPlist.strings in Resources */,
+				F81049C219275BD100447671 /* btnSign Up@2x.png in Resources */,
 				F87B37D51920EC800041B4D9 /* Trash@2x.png in Resources */,
 				F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */,
 				F87B37D21920EC800041B4D9 /* Settings.png in Resources */,
 				F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */,
+				F81049BF19275BD100447671 /* btnSign In.png in Resources */,
 				F81049B5192752B400447671 /* neuzeitgroteskbold-webfont.ttf in Resources */,
+				F81049C619275D3F00447671 /* Splash.png in Resources */,
 				F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +481,10 @@
 			files = (
 				F8F0BF1B18C94FD6005D3A5C /* MusioAppDelegate.m in Sources */,
 				F81049B2192741AA00447671 /* MusioUploadViewController.m in Sources */,
+				F81049D019275F3E00447671 /* MusioSignInViewController.m in Sources */,
+				F81049CD19275EBE00447671 /* MusioWelcomeViewController.m in Sources */,
 				F84FABF91925BAC2007B3FBB /* MusioUploadsTableViewController.m in Sources */,
+				F81049D319275F4F00447671 /* MusioSignUpViewController.m in Sources */,
 				F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */,
 				F8F0BF1718C94FD5005D3A5C /* main.m in Sources */,
 				F8F0BF2418C94FD6005D3A5C /* MusioViewController.m in Sources */,

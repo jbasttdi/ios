@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Xih-J2-5Fr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HRd-pw-NDj">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Musio View Controller-->
         <scene sceneID="lgB-JP-e4a">
             <objects>
-                <viewController id="Xih-J2-5Fr" customClass="MusioViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InboxView" id="Xih-J2-5Fr" customClass="MusioViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hVE-hh-OrO"/>
                         <viewControllerLayoutGuide type="bottom" id="MEh-96-IFx"/>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvs-fY-Ga4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="-89"/>
+            <point key="canvasLocation" x="855" y="619"/>
         </scene>
         <!--Musio Uploads Table View Controller - Your Uploads-->
         <scene sceneID="Fo2-Oc-LtV">
@@ -108,7 +108,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1Y2-tF-DxC">
             <objects>
-                <navigationController definesPresentationContext="YES" id="HRd-pw-NDj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="WelcomeView" definesPresentationContext="YES" id="HRd-pw-NDj" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Fdq-kI-Q56">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -274,11 +274,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Go.png" width="270" height="50"/>
         <image name="Like.png" width="40" height="39"/>
         <image name="Main.png" width="640" height="1136"/>
         <image name="Menu.png" width="19" height="16"/>
         <image name="Settings.png" width="25" height="25"/>
+        <image name="Sign In.png" width="320" height="568"/>
+        <image name="Sign Up.png" width="640" height="1136"/>
         <image name="Trash.png" width="34" height="40"/>
+        <image name="Welcome.png" width="320" height="568"/>
+        <image name="btnSign In.png" width="270" height="50"/>
+        <image name="btnSign Up.png" width="270" height="50"/>
     </resources>
     <color key="tintColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
