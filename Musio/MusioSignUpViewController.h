@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MusioSignUpViewController : UIViewController
+@interface MusioSignUpViewController : UIViewController <UITextFieldDelegate>
+
+- (void)signUp:(UIButton*)sender;
 
 @end
