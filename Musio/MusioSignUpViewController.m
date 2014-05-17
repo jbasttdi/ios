@@ -89,7 +89,7 @@
 
 
     UIButton* signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [signUpButton setFrame:CGRectMake(30, 285, 260, 50)];
+    [signUpButton setFrame:CGRectMake(20, 285, 270, 50)];
     [signUpButton setImage:[UIImage imageNamed:@"Go.png"] forState:UIControlStateNormal];
     [signUpButton addTarget:self
                      action:@selector(signUp:)
