@@ -103,7 +103,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yky-CI-UGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1311" y="-201"/>
+            <point key="canvasLocation" x="1427" y="-201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Y2-tF-DxC">
@@ -124,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XJ-vc-Uar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="-1259"/>
+            <point key="canvasLocation" x="855" y="-1259"/>
         </scene>
         <!--Musio Welcome View Controller-->
         <scene sceneID="SUE-Z0-o5y">
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW7-3X-tNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1311" y="-1259"/>
+            <point key="canvasLocation" x="1427" y="-1259"/>
         </scene>
         <!--Musio Sign Up View Controller-->
         <scene sceneID="3Co-IN-7hB">
@@ -194,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2d-XV-Pub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="-1643"/>
+            <point key="canvasLocation" x="1973" y="-1635"/>
         </scene>
         <!--Musio Sign In View Controller-->
         <scene sceneID="7yA-JL-Iez">
@@ -220,7 +220,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm0-M7-wxc">
-                                <rect key="frame" x="30" y="268" width="270" height="50"/>
+                                <rect key="frame" x="20" y="268" width="270" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Go.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -236,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiv-xv-O1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1709" y="-904"/>
+            <point key="canvasLocation" x="1973" y="-938"/>
         </scene>
         <!--Musio Upload View Controller-->
         <scene sceneID="HHh-YR-ew8">
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2z9-VA-YYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727" y="-201"/>
+            <point key="canvasLocation" x="1973" y="-201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lR4-nB-BJk">
@@ -270,7 +270,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxa-Zr-tUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684" y="-304"/>
+            <point key="canvasLocation" x="-444" y="-304"/>
         </scene>
         <!--Musio Root View Controller-->
         <scene sceneID="jdp-dq-Nd4">
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkb-Ca-cJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="-304"/>
+            <point key="canvasLocation" x="116" y="-304"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oOH-YI-09c">
