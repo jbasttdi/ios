@@ -18,6 +18,11 @@ PODS:
   - AFNetworking/UIKit (2.2.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
   - GroundControl (2.1.0):
     - AFNetworking (~> 2.2)
   - JSONKit (1.6)
@@ -28,6 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
+  - CocoaLumberjack
   - GroundControl (~> 2.1.0)
   - JSONKit (from `https://gist.github.com/marcdown/5282955/raw/2a52cfd92f112f2a52669420c82c1bb1efd15d2a/JSONKit.podspec`)
   - Lockbox
@@ -41,6 +47,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
   GroundControl: 6c9ad5f196e61ada7624d5acfbfe0f714d6c7e27
   JSONKit: 98c50800be324836e4443f6d22ff1324caffa608
   Lockbox: 33fad03fc7dd73e53f7108d9abff6fa0cfa1058b
