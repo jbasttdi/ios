@@ -46,9 +46,11 @@
         [trackView setBackgroundColor: [UIColor colorWithHue:0.000 saturation:0.000 brightness:0.173 alpha:1.000]];
 
     //    TRACK TITLE
-        CGRect titleLabelFrame = CGRectMake(20, 200, 240, 30);
+        CGRect titleLabelFrame = CGRectMake(20, 200, 240, 120);
         UILabel* titleLabel = [[UILabel alloc] initWithFrame: titleLabelFrame];
         [titleLabel setText: [trackData valueForKey:@"title"]];
+        [titleLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Bol" size:30]];
+        [titleLabel setNumberOfLines:0];
         [titleLabel setTextColor: [UIColor whiteColor]];
         [trackView addSubview:titleLabel];
 

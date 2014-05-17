@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0925DBECB22B4DB1A6215C84 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 056956FADAA24D49B05AB375 /* libPods.a */; };
 		F81049B2192741AA00447671 /* MusioUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81049B1192741AA00447671 /* MusioUploadViewController.m */; };
+		F81049B5192752B400447671 /* neuzeitgroteskbold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */; };
+		F81049B6192752B400447671 /* neuzeitgroteskregular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */; };
 		F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81217F418C955F800FD5FA8 /* Images.xcassets */; };
 		F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D2D6C191D177D008E059D /* MusioAPIClient.m */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
@@ -56,6 +58,8 @@
 		E43724A9C6CA48CC8A3D2657 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F81049B0192741AA00447671 /* MusioUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioUploadViewController.h; sourceTree = "<group>"; };
 		F81049B1192741AA00447671 /* MusioUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadViewController.m; sourceTree = "<group>"; };
+		F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "neuzeitgroteskbold-webfont.ttf"; sourceTree = "<group>"; };
+		F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "neuzeitgroteskregular-webfont.ttf"; sourceTree = "<group>"; };
 		F81217F418C955F800FD5FA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Musio/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		F83D2D6B191D177D008E059D /* MusioAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioAPIClient.h; sourceTree = "<group>"; };
 		F83D2D6C191D177D008E059D /* MusioAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioAPIClient.m; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 		F87B37C51920EC800041B4D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */,
+				F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */,
 				F87B37C11920E45D0041B4D9 /* Main.png */,
 				F87B37C21920E45D0041B4D9 /* Main@2x.png */,
 				F81217F418C955F800FD5FA8 /* Images.xcassets */,
@@ -340,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81049B6192752B400447671 /* neuzeitgroteskregular-webfont.ttf in Resources */,
 				F886632B1923900100087D76 /* play-xl.svg in Resources */,
 				F87B37D41920EC800041B4D9 /* Trash.png in Resources */,
 				F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */,
@@ -356,6 +363,7 @@
 				F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */,
 				F87B37D21920EC800041B4D9 /* Settings.png in Resources */,
 				F87B37C41920E45D0041B4D9 /* Main@2x.png in Resources */,
+				F81049B5192752B400447671 /* neuzeitgroteskbold-webfont.ttf in Resources */,
 				F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
