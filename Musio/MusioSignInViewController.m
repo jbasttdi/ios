@@ -74,8 +74,17 @@
     [[self passwordField] setPlaceholder:@"Your Password"];
     [[self passwordField] setKeyboardAppearance: UIKeyboardAppearanceDark];
     [[self passwordField] setSecureTextEntry:YES];
-
     [[self view] addSubview:[self passwordField]];
+
+
+    UIButton* signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [signUpButton setFrame:CGRectMake(20, 275, 270, 50)];
+    [signUpButton setImage:[UIImage imageNamed:@"Go.png"] forState:UIControlStateNormal];
+    [signUpButton addTarget:self
+                     action:@selector(signIn:)
+           forControlEvents:UIControlEventTouchUpInside];
+
+    [[self view] addSubview:signUpButton];
 
     [super viewDidLoad];
 }
