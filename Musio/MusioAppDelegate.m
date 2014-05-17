@@ -18,6 +18,7 @@
     [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval: UIApplicationBackgroundFetchIntervalMinimum];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 
+    [Lockbox setString:@"43834c5c-bcbb-40f2-9ed4-444ba301946f" forKey:@"user_uuid"];
 
     // Override point for customization after application launch.
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
@@ -37,7 +38,7 @@
     MusioAPIClient *client = [MusioAPIClient sharedClient];
     NSString *deviceTokenString = [NSString stringWithFormat:@"%@", deviceToken];
     [client postAPNToken:deviceTokenString
-                      to:@"43834c5c-bcbb-40f2-9ed4-444ba301946f"
+                      to:[Lockbox stringForKey:@"user_uuid"]
                  success:^(NSURLSessionDataTask *task, id responseObject) {
                      NSLog(@"Success -- %@", responseObject);
                  }
