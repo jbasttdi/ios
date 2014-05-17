@@ -109,12 +109,6 @@
     CGPoint location = [touch locationInView: [self view]];
      if (location.y < 40) {
         NSLog(@"Share Track");
-         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sharing Track"
-                                                             message:@"Sharing Track"
-                                                            delegate:nil
-                                                   cancelButtonTitle:@"Ok"
-                                                   otherButtonTitles:nil];
-         [alertView show];
         [[touch view] removeFromSuperview];
     } else if (location.y > (CGRectGetHeight(self.view.bounds) - 40) ) {
         NSLog(@"Save Track");
