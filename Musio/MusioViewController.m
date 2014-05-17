@@ -153,6 +153,7 @@
                                                            cancelButtonTitle:@"Ok"
                                                            otherButtonTitles:nil];
                  [alertView show];
+                 [Lockbox setString:nil forKey:@"token"];
              }];
 
 }
