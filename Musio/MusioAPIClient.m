@@ -30,22 +30,28 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
     return self;
 }
 
-- (void)postAPNToken:(NSString *)token
+- (void)postAPNToken:(NSString *)device_token
                   to:(NSString *)user_uuid
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
              failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
     
-    
-    [self PATCH:path parameters:@{@"apntoken":token} success:^(NSURLSessionDataTask *task, id responseObject) {
     NSString* path = [NSString stringWithFormat:@"api/v1/users/%@.json", user_uuid];
-        if (success) {
-            success(task, responseObject);
-        }
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        if (failure) {
-            failure(task, error);
-        }
-    }];
+    NSString* device = [NSString stringWithFormat:@"%@",  [[UIDevice currentDevice] model]];
+
+    if (device_token != NULL) {
+        [self PATCH:path
+         parameters:@{@"user": @{@"device_token":device_token, @"device_kind": device }}
+            success:^(NSURLSessionDataTask *task, id responseObject) {
+                if (success) {
+                    success(task, responseObject);
+                }
+            }
+            failure:^(NSURLSessionDataTask *task, NSError *error) {
+                if (failure) {
+                    failure(task, error);
+                }
+            }];
+    }
 }
 
 - (void)getInbox:(NSString *)user_uuid
@@ -54,11 +60,14 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
     
     NSString* path =  @"api/v1/inbox.json";
     
-    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self GET:path
+   parameters:nil
+      success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
             success(task, responseObject);
         }
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    }
+      failure:^(NSURLSessionDataTask *task, NSError *error) {
         if (failure) {
             failure(task, error);
         }

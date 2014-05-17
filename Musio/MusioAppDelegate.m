@@ -34,10 +34,8 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-    NSLog(@"application:didRegisterForRemoteNotificationsWithDeviceToken: %@", deviceToken);
     MusioAPIClient *client = [MusioAPIClient sharedClient];
-    NSString *deviceTokenString = [[NSString alloc] initWithData:deviceToken encoding:NSUTF8StringEncoding];
-    
+    NSString *deviceTokenString = [NSString stringWithFormat:@"%@", deviceToken];
     [client postAPNToken:deviceTokenString
                       to:@"43834c5c-bcbb-40f2-9ed4-444ba301946f"
                  success:^(NSURLSessionDataTask *task, id responseObject) {

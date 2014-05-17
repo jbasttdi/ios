@@ -18,7 +18,7 @@ extern NSString * const kMusioBaseURLString;
         success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
         failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
 
-- (void)postAPNToken:(NSString *)token
+- (void)postAPNToken:(NSString *)device_token
                   to:(NSString *)user_uuid
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
              failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
