@@ -49,6 +49,7 @@
 		F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D61920EFAA0041B4D9 /* TrackBackground.png */; };
 		F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */; };
 		F886632B1923900100087D76 /* play-xl.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663011923900100087D76 /* play-xl.svg */; };
+		F8CC9FE519282C8A0039B396 /* MusioSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC9FE419282C8A0039B396 /* MusioSettingsViewController.m */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
 		F8F0BF0F18C94FD5005D3A5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0E18C94FD5005D3A5C /* UIKit.framework */; };
@@ -125,6 +126,8 @@
 		F87B37D61920EFAA0041B4D9 /* TrackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackBackground.png; sourceTree = "<group>"; };
 		F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackBackground@2x.png"; sourceTree = "<group>"; };
 		F88663011923900100087D76 /* play-xl.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "play-xl.svg"; sourceTree = "<group>"; };
+		F8CC9FE319282C8A0039B396 /* MusioSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioSettingsViewController.h; sourceTree = "<group>"; };
+		F8CC9FE419282C8A0039B396 /* MusioSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioSettingsViewController.m; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,6 +189,8 @@
 				F81049D219275F4F00447671 /* MusioSignUpViewController.m */,
 				F81049DC192784E000447671 /* MusioRootViewController.h */,
 				F81049DD192784E000447671 /* MusioRootViewController.m */,
+				F8CC9FE319282C8A0039B396 /* MusioSettingsViewController.h */,
+				F8CC9FE419282C8A0039B396 /* MusioSettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				F81049D019275F3E00447671 /* MusioSignInViewController.m in Sources */,
 				F81049CD19275EBE00447671 /* MusioWelcomeViewController.m in Sources */,
 				F84FABF91925BAC2007B3FBB /* MusioUploadsTableViewController.m in Sources */,
+				F8CC9FE519282C8A0039B396 /* MusioSettingsViewController.m in Sources */,
 				F81049D319275F4F00447671 /* MusioSignUpViewController.m in Sources */,
 				F81049DE192784E100447671 /* MusioRootViewController.m in Sources */,
 				F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */,
