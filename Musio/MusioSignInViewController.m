@@ -38,10 +38,17 @@
 
 - (void)viewDidLoad
 {
-    UIColor* backgroundColor = [UIColor colorWithRed:0.396 green:0.396 blue:0.396 alpha:0.000];
+    UIColor* backgroundColor = [UIColor colorWithRed:0.396 green:0.396 blue:0.396 alpha:1.000];
     UIFont* font = [UIFont fontWithName:@"NeuzeitGro-Reg" size:20];
 
-    [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(40, 135, 220, 30)]];
+    UILabel* titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(20, 50, 270, 120)];
+    [titleLabel setText: @"Sign In."];
+    [titleLabel setFont: [UIFont fontWithName:@"NeuzeitGro-Bol" size:24]];
+    [titleLabel setTextColor: [UIColor whiteColor]];
+    [[self view] addSubview:titleLabel];
+
+
+    [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(20, 135, 270, 50)]];
     [[self emailField] setBackgroundColor:backgroundColor];
     [[self emailField] setFont:font];
     [[self emailField] setTextColor: [UIColor whiteColor]];
@@ -49,16 +56,21 @@
     [[self emailField] setKeyboardType: UIKeyboardTypeEmailAddress];
     [[self emailField] setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     [[self emailField] setAutocorrectionType:UITextAutocorrectionTypeNo];
+    [[self emailField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
+    [[self emailField] setLeftViewMode: UITextFieldViewModeAlways];
+
     [[self emailField] setPlaceholder:@"Your Email Address"];
     [[self view] addSubview:[self emailField]];
 
-    [self setPasswordField: [[UITextField alloc] initWithFrame: CGRectMake(40, 205, 220, 30)]];
+    [self setPasswordField: [[UITextField alloc] initWithFrame: CGRectMake(20, 205, 270, 50)]];
     [[self passwordField] setBackgroundColor:backgroundColor];
     [[self passwordField] setFont:font];
     [[self passwordField] setTextColor: [UIColor whiteColor]];
     [[self passwordField] setDelegate:self];
     [[self passwordField] setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     [[self passwordField] setAutocorrectionType:UITextAutocorrectionTypeNo];
+    [[self passwordField] setLeftView: [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)]];
+    [[self passwordField] setLeftViewMode: UITextFieldViewModeAlways];
     [[self passwordField] setPlaceholder:@"Your Password"];
     [[self passwordField] setSecureTextEntry:YES];
 
