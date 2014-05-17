@@ -81,7 +81,7 @@ NSString * const kMusioBaseURLString = @"http://localhost:5100";
 
     if (device_token != NULL) {
         [self PATCH:path
-         parameters:@{@"user": @{@"device_token":device_token, @"device_kind": device }}
+         parameters:@{@"token": [Lockbox stringForKey:@"token"], @"user": @{@"device_token":device_token, @"device_kind": device }}
             success:^(NSURLSessionDataTask *task, id responseObject) {
                 if (success) {
                     success(task, responseObject);
@@ -102,7 +102,7 @@ NSString * const kMusioBaseURLString = @"http://localhost:5100";
     NSString* path =  @"api/v1/inbox.json";
     
     [self GET:path
-   parameters:nil
+   parameters:@{@"token": [Lockbox stringForKey:@"token"]}
       success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
             success(task, responseObject);
