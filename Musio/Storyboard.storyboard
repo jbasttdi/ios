@@ -124,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XJ-vc-Uar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="-1259"/>
+            <point key="canvasLocation" x="707" y="-1259"/>
         </scene>
         <!--Musio Welcome View Controller-->
         <scene sceneID="SUE-Z0-o5y">
@@ -183,7 +183,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sign Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-to-Q2b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Body.png" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-to-Q2b">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -274,13 +274,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Body.png" width="320" height="568"/>
         <image name="Go.png" width="270" height="50"/>
         <image name="Like.png" width="40" height="39"/>
         <image name="Main.png" width="640" height="1136"/>
         <image name="Menu.png" width="19" height="16"/>
         <image name="Settings.png" width="25" height="25"/>
-        <image name="Sign In.png" width="320" height="568"/>
-        <image name="Sign Up.png" width="640" height="1136"/>
+        <image name="Splash.png" width="640" height="1136"/>
         <image name="Trash.png" width="34" height="40"/>
         <image name="Welcome.png" width="320" height="568"/>
         <image name="btnSign In.png" width="270" height="50"/>
