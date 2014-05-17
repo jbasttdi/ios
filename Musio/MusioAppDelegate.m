@@ -18,7 +18,11 @@
     [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval: UIApplicationBackgroundFetchIntervalMinimum];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 
-    [Lockbox setString:@"43834c5c-bcbb-40f2-9ed4-444ba301946f" forKey:@"user_uuid"];
+    Reachability* reach = [Reachability reachabilityWithHostname:@"api.musio.co"];
+    reach.unreachableBlock = ^(Reachability*reach) {
+        NSLog(@"UNREACHABLE!");
+    };
+    [reach startNotifier];
 
     // Override point for customization after application launch.
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
