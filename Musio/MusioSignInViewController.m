@@ -41,7 +41,7 @@
     UIColor* backgroundColor = [UIColor colorWithRed:0.396 green:0.396 blue:0.396 alpha:0.000];
     UIFont* font = [UIFont fontWithName:@"NeuzeitGro-Reg" size:20];
 
-    [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(40, 135, 240, 30)]];
+    [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(40, 135, 220, 30)]];
     [[self emailField] setBackgroundColor:backgroundColor];
     [[self emailField] setFont:font];
     [[self emailField] setTextColor: [UIColor whiteColor]];
@@ -49,15 +49,17 @@
     [[self emailField] setKeyboardType: UIKeyboardTypeEmailAddress];
     [[self emailField] setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     [[self emailField] setAutocorrectionType:UITextAutocorrectionTypeNo];
+    [[self emailField] setPlaceholder:@"Your Email Address"];
     [[self view] addSubview:[self emailField]];
 
-    [self setPasswordField: [[UITextField alloc] initWithFrame: CGRectMake(40, 205, 240, 30)]];
+    [self setPasswordField: [[UITextField alloc] initWithFrame: CGRectMake(40, 205, 220, 30)]];
     [[self passwordField] setBackgroundColor:backgroundColor];
     [[self passwordField] setFont:font];
     [[self passwordField] setTextColor: [UIColor whiteColor]];
     [[self passwordField] setDelegate:self];
     [[self passwordField] setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     [[self passwordField] setAutocorrectionType:UITextAutocorrectionTypeNo];
+    [[self passwordField] setPlaceholder:@"Your Password"];
     [[self passwordField] setSecureTextEntry:YES];
 
     [[self view] addSubview:[self passwordField]];
@@ -66,7 +68,6 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    NSLog(@"touchesBegan:withEvent:");
     [self.view endEditing:YES];
     [super touchesBegan:touches withEvent:event];
 }
