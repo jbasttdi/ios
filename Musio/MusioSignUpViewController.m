@@ -41,13 +41,13 @@
     UIColor* backgroundColor = [UIColor colorWithRed:0.396 green:0.396 blue:0.396 alpha:1.000];
     UIFont* font = [UIFont fontWithName:@"NeuzeitGro-Reg" size:20];
 
-    UILabel* titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(30, -10, 240, 120)];
+    UILabel* titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(20, -10, 270, 120)];
     [titleLabel setText: @"Sign Up."];
     [titleLabel setFont: [UIFont fontWithName:@"NeuzeitGro-Bol" size:24]];
     [titleLabel setTextColor: [UIColor whiteColor]];
     [[self signUpForm] addSubview:titleLabel];
 
-    [self setNameField: [[UITextField alloc] initWithFrame: CGRectMake(30, 75, 260, 50)]];
+    [self setNameField: [[UITextField alloc] initWithFrame: CGRectMake(20, 75, 270, 50)]];
     [[self nameField] setBackgroundColor:backgroundColor];
     [[self nameField] setFont:font];
     [[self nameField] setTextColor: [UIColor whiteColor]];
@@ -57,7 +57,7 @@
     [[self nameField] setPlaceholder:@"Your Name"];
     [[self signUpForm] addSubview:[self nameField]];
 
-    [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(30, 145, 260, 50)]];
+    [self setEmailField: [[UITextField alloc] initWithFrame: CGRectMake(20, 145, 270, 50)]];
     [[self emailField] setBackgroundColor:backgroundColor];
     [[self emailField] setFont:font];
     [[self emailField] setTextColor: [UIColor whiteColor]];
@@ -71,7 +71,7 @@
     [[self signUpForm] addSubview:[self emailField]];
 
 
-    [self setPasswordField: [[UITextField alloc] initWithFrame: CGRectMake(30, 215, 260, 50)]];
+    [self setPasswordField: [[UITextField alloc] initWithFrame: CGRectMake(20, 215, 270, 50)]];
     [[self passwordField] setBackgroundColor:backgroundColor];
     [[self passwordField] setFont:font];
     [[self passwordField] setTextColor: [UIColor whiteColor]];
