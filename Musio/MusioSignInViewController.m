@@ -7,7 +7,6 @@
 //
 #import "MusioAPIClient.h"
 #import "MusioSignInViewController.h"
-#import "MusioViewController.h"
 
 @interface MusioSignInViewController ()
 @property UITextField *emailField;
@@ -115,8 +114,9 @@
                 [Lockbox setString:[session objectForKey:@"uuid"]  forKey:@"uuid"];
                 [Lockbox setString:[session objectForKey:@"token"] forKey:@"token"];
 
-               MusioViewController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"InboxView"];
+               UINavigationController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"mainNavigation"];
                [self presentViewController:controller animated:YES completion:^{}];
+
 
            }
            failure:^(NSURLSessionDataTask *task, NSError *error) {

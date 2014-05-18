@@ -7,7 +7,6 @@
 //
 
 #import "MusioSignUpViewController.h"
-#import "MusioViewController.h"
 #import "MusioAPIClient.h"
 
 @interface MusioSignUpViewController ()
@@ -160,8 +159,10 @@
                 [Lockbox setString:[user objectForKey:@"uuid"] forKey:@"uuid"];
                 [Lockbox setString:[user objectForKey:@"token"] forKey:@"token"];
 
-                MusioViewController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"InboxView"];
-                [self presentViewController:controller animated:YES completion:^{}];
+               UINavigationController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"mainNavigation"];
+               [self presentViewController:controller animated:YES completion:^{}];
+
+
            }
            failure:^(NSURLSessionDataTask *task, NSError *error) {
                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Something's Gone Horribly Wrong"
