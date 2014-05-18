@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="p8o-8N-0zE">
             <objects>
-                <navigationController definesPresentationContext="YES" id="rEO-Z2-8BW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNavigation" definesPresentationContext="YES" id="rEO-Z2-8BW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fi5-7T-JTA">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.12941177189350128" green="0.12941177189350128" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
@@ -87,15 +87,6 @@
                     <view key="view" contentMode="scaleToFill" id="u4B-LI-f73">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7p-70-AAJ">
-                                <rect key="frame" x="20" y="238" width="280" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="0.12549020349979401" green="0.12549020349979401" blue="0.12549020349979401" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="1wB-Si-9XP"/>
@@ -245,7 +236,7 @@
         <!--Musio Root View Controller-->
         <scene sceneID="jdp-dq-Nd4">
             <objects>
-                <viewController id="o01-uD-O6r" customClass="MusioRootViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rootView" id="o01-uD-O6r" customClass="MusioRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="seZ-Uz-FJz"/>
                         <viewControllerLayoutGuide type="bottom" id="KtP-0G-3Kq"/>
