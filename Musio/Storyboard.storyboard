@@ -4,6 +4,22 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="p8o-8N-0zE">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="rEO-Z2-8BW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fi5-7T-JTA">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941177189350128" green="0.12941177189350128" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xih-J2-5Fr" kind="relationship" relationship="rootViewController" id="5yZ-h0-5A6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbI-Lg-AGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="619"/>
+        </scene>
         <!--Musio View Controller-->
         <scene sceneID="lgB-JP-e4a">
             <objects>
@@ -26,6 +42,9 @@
                                 <state key="normal" image="Settings.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2dT-Qk-TqU" kind="push" id="4dj-kp-Gla"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdg-Io-It4">
                                 <rect key="frame" x="6" y="15" width="49" height="49"/>
@@ -51,13 +70,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FvH-pg-pkc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvs-fY-Ga4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="619"/>
+            <point key="canvasLocation" x="1427" y="619"/>
         </scene>
-        <!--Musio Uploads Table View Controller - Your Uploads-->
-        <scene sceneID="Fo2-Oc-LtV">
+        <!--Musio Settings View Controller-->
+        <scene sceneID="ozo-xL-g5I">
             <objects>
                 <viewController id="2dT-Qk-TqU" customClass="MusioSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
@@ -67,12 +87,22 @@
                     <view key="view" contentMode="scaleToFill" id="u4B-LI-f73">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7p-70-AAJ">
+                                <rect key="frame" x="20" y="238" width="280" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549020349979401" green="0.12549020349979401" blue="0.12549020349979401" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1wB-Si-9XP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ah-pB-qMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1427" y="-201"/>
+            <point key="canvasLocation" x="1973" y="619"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Y2-tF-DxC">
@@ -197,25 +227,6 @@
             </objects>
             <point key="canvasLocation" x="1973" y="-938"/>
         </scene>
-        <!--Musio Upload View Controller-->
-        <scene sceneID="HHh-YR-ew8">
-            <objects>
-                <viewController storyboardIdentifier="UploadView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zBw-GT-Klc" customClass="MusioUploadViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="akm-Xc-lrA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Otd-aR-h26"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HP4-pF-jwO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bkT-Bf-KL2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2z9-VA-YYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1973" y="-201"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lR4-nB-BJk">
             <objects>
@@ -253,27 +264,12 @@
                     <navigationItem key="navigationItem" id="919-5x-xub"/>
                     <connections>
                         <segue destination="HRd-pw-NDj" kind="modal" identifier="NotLoggedIn" animates="NO" id="rVq-8N-cVP"/>
-                        <segue destination="Xih-J2-5Fr" kind="modal" identifier="LoggedIn" animates="NO" id="p47-Kn-Z2A"/>
+                        <segue destination="rEO-Z2-8BW" kind="modal" identifier="LoggedIn" id="Vp9-xE-m98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkb-Ca-cJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="-304"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oOH-YI-09c">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="TIU-l8-4KC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Pd-69-1dF">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="X0z-2a-tzG" kind="relationship" relationship="rootViewController" id="jSg-Wg-wgP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3GL-Ui-bei" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="855" y="-201"/>
         </scene>
     </scenes>
     <resources>

@@ -24,15 +24,16 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
     if ([[NSFileManager defaultManager] fileExistsAtPath:self.dataFilePath]) {
         self.arrTrackData = [[NSMutableArray alloc] initWithContentsOfFile:self.dataFilePath];
     }
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docDirectory = [paths objectAtIndex:0];
     self.dataFilePath = [docDirectory stringByAppendingPathComponent:@"data"];
     [self refreshData];
+    [super viewDidLoad];
+
 }
 
 - (void)loadTracksIntoViews
@@ -95,6 +96,9 @@
     NSLog(@"Play Audio");
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
