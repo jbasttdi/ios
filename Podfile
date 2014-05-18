@@ -1,4 +1,5 @@
 platform :ios, '7.0'
+pod 'JASidePanels'
 pod 'CocoaLumberjack'
 pod 'AFNetworking', '2.2.1'
 pod 'GroundControl', '~> 2.1.0'

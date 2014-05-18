@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5BF362CA2EDA496BBE8552D6"
+               BlueprintIdentifier = "124B2A180AD94C06B25B03AD"
                BuildableName = "libPods-GroundControl.a"
                BlueprintName = "Pods-GroundControl"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JASidePanels.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JSONKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>22C920D2BD5A40CFA2181D43</key>
+		<key>124B2A180AD94C06B25B03AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>29EC2F45FA6F40108D6903EA</key>
+		<key>457EACE63CA7499CBAAF0BFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5964DF29EFCB45B7AD14506C</key>
+		<key>50ADC44063D2407DB981FF5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5BF362CA2EDA496BBE8552D6</key>
+		<key>6294AE50DF2947BAA0881C30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>71075FE9568A4B05AE2566D6</key>
+		<key>65A9D4B0DF934689AC2DA4C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C50ECFDA15B64A6BBDB44596</key>
+		<key>879FE793E0E54ECF850E9112</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E41C0F09F6A644858C130837</key>
+		<key>A82361EBCEBF4EA4A0597764</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA3DA92A26D243A18A25F928</key>
+		<key>CD06C2FA478F4FE58B6347DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFEC57271EAB4189BB6E40EE</key>
+		<key>E15CF03F68954343964D7A3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5B12BDA0C3D44BF95589789</key>
 		<dict>
 			<key>primary</key>
 			<true/>
