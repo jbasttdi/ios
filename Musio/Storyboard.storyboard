@@ -4,6 +4,24 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Musio Menu View Controller-->
+        <scene sceneID="BhT-eO-YsH">
+            <objects>
+                <viewController id="WKj-Zl-7VV" customClass="MusioMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ux-jr-fqG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q74-3Y-L4E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Czo-Qi-JdD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kn-ft-cxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="615"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="p8o-8N-0zE">
             <objects>

@@ -10,6 +10,8 @@
 #import "MusioAPIClient.h"
 #import "SVGKit/SVGKit.h"
 #import "SVGKFastImageView.h"
+#import "UIViewController+JASidePanel.h"
+#import "MusioMenuViewController.h"
 #import <POP/POP.h>
 
 @interface MusioViewController ()
@@ -134,6 +136,10 @@
     }
 }
 
+
+- (IBAction)toggleMenu:(id)sender {
+    [self.sidePanelController showLeftPanelAnimated:YES];
+}
 
 - (void)refreshData
 {

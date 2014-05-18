@@ -10,6 +10,7 @@
 
 @interface MusioViewController : UIViewController
 
+- (IBAction)toggleMenu:(id)sender;
 - (void) refreshData;
 - (void) loadTracksIntoViews;
 
