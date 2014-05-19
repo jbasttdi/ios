@@ -18,4 +18,5 @@
     #import <GroundControl/NSUserDefaults+GroundControl.h>
     #import <Lockbox/Lockbox.h>
     #import "MusioWelcomeViewController.h"
+    #import "MusioAPIClient.h"
 #endif
