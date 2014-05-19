@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Musio Menu View Controller-->
+        <!--Musio Sidebar View Controller-->
         <scene sceneID="BhT-eO-YsH">
             <objects>
-                <viewController id="WKj-Zl-7VV" customClass="MusioMenuViewController" sceneMemberID="viewController">
+                <viewController id="WKj-Zl-7VV" customClass="MusioSidebarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ux-jr-fqG"/>
                         <viewControllerLayoutGuide type="bottom" id="Q74-3Y-L4E"/>
@@ -15,7 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="Czo-Qi-JdD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kn-ft-cxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,7 +36,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbI-Lg-AGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="619"/>
+            <point key="canvasLocation" x="1427" y="615"/>
+        </scene>
+        <!--Musio Main Menu View Controller-->
+        <scene sceneID="onR-1q-ST6">
+            <objects>
+                <viewController storyboardIdentifier="mainMenu" id="m8K-xn-Ywh" customClass="MusioMainMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fRg-69-jYs"/>
+                        <viewControllerLayoutGuide type="bottom" id="oae-Qg-WjJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wab-jx-WmV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Body.png" translatesAutoresizingMaskIntoConstraints="NO" id="5L9-Y9-SoK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvu-Y0-aXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1427" y="-304"/>
         </scene>
         <!--Musio View Controller-->
         <scene sceneID="lgB-JP-e4a">
@@ -50,26 +74,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="GKm-6Q-rKf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-Xc-SlZ">
-                                <rect key="frame" x="263" y="15" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Settings.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2dT-Qk-TqU" kind="push" id="4dj-kp-Gla"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdg-Io-It4">
                                 <rect key="frame" x="6" y="15" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Menu.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="toggleMenu:" destination="Xih-J2-5Fr" eventType="touchUpInside" id="07M-P6-KpI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRC-k5-p18">
                                 <rect key="frame" x="92" y="509" width="34" height="40"/>
@@ -86,18 +99,18 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.13333334028720856" green="0.13333334028720856" blue="0.13333334028720856" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="FvH-pg-pkc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvs-fY-Ga4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1427" y="619"/>
+            <point key="canvasLocation" x="1953" y="615"/>
         </scene>
         <!--Musio Settings View Controller-->
         <scene sceneID="ozo-xL-g5I">
             <objects>
-                <viewController id="2dT-Qk-TqU" customClass="MusioSettingsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsView" id="2dT-Qk-TqU" customClass="MusioSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eMY-5x-JOT"/>
                         <viewControllerLayoutGuide type="bottom" id="2Tr-3x-iQ9"/>
@@ -111,7 +124,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ah-pB-qMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973" y="619"/>
+            <point key="canvasLocation" x="2499" y="615"/>
+        </scene>
+        <!--Musio Upload Table View Controller - Root View Controller-->
+        <scene sceneID="bKX-PZ-gZp">
+            <objects>
+                <tableViewController storyboardIdentifier="uploadTable" id="5zR-Q9-rxw" customClass="MusioUploadTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="pT7-AF-DeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="uploadViewCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="uploadViewCell" textLabel="BMb-AJ-zwa" detailTextLabel="uZk-1R-gao" rowHeight="100" style="IBUITableViewCellStyleSubtitle" id="Qdl-jx-Yov">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qdl-jx-Yov" id="AdY-yF-xkM">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BMb-AJ-zwa">
+                                            <rect key="frame" x="15" y="31" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uZk-1R-gao">
+                                            <rect key="frame" x="15" y="53" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Hbj-Oy-hFb" kind="push" id="5Rs-DA-ZQI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5zR-Q9-rxw" id="1Xd-Yv-OXf"/>
+                            <outlet property="delegate" destination="5zR-Q9-rxw" id="E7m-im-OSz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="YQE-lT-Lpa"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nr5-UI-TIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959" y="1452"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vi0-rD-drN">
+            <objects>
+                <viewController id="Hbj-Oy-hFb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Mb-2S-PWo"/>
+                        <viewControllerLayoutGuide type="bottom" id="CQg-oL-1SO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qcc-zJ-cVq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tan-b3-FR2">
+                                <rect key="frame" x="73" y="257" width="174" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zlf-8N-Kp6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRa-2Z-1bv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499" y="1452"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kCf-JV-dox">
+            <objects>
+                <navigationController storyboardIdentifier="uploadNavigation" definesPresentationContext="YES" id="Mn4-wq-goP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mQz-k9-W8P">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5zR-Q9-rxw" kind="relationship" relationship="rootViewController" id="w9n-4U-ztR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G35-lK-JIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1427" y="1452"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Y2-tF-DxC">
@@ -273,7 +384,7 @@
                     <navigationItem key="navigationItem" id="919-5x-xub"/>
                     <connections>
                         <segue destination="HRd-pw-NDj" kind="modal" identifier="NotLoggedIn" animates="NO" id="rVq-8N-cVP"/>
-                        <segue destination="rEO-Z2-8BW" kind="modal" identifier="LoggedIn" id="Vp9-xE-m98"/>
+                        <segue destination="WKj-Zl-7VV" kind="modal" identifier="LoggedIn" id="IYN-5E-Sjc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkb-Ca-cJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,9 +395,7 @@
     <resources>
         <image name="Body.png" width="320" height="568"/>
         <image name="Like.png" width="40" height="39"/>
-        <image name="Main.png" width="640" height="1136"/>
         <image name="Menu.png" width="19" height="16"/>
-        <image name="Settings.png" width="25" height="25"/>
         <image name="Splash.png" width="640" height="1136"/>
         <image name="Trash.png" width="34" height="40"/>
         <image name="Welcome.png" width="320" height="568"/>

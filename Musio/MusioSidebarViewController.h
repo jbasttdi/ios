@@ -8,6 +8,7 @@
 
 #import "JASidePanelController.h"
 
-@interface MusioMenuViewController : JASidePanelController
+@interface MusioSidebarViewController : JASidePanelController
+
 
 @end

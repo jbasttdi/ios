@@ -104,29 +104,6 @@
     self.scrollView.contentSize = self.settingsForm.bounds.size;
     [[self scrollView] addSubview:[self settingsForm]];
 
-
-    NSString* version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    NSString* build = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
-
-    UILabel* versionLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 540, (width/3), 20)];
-    [versionLabel setText:version];
-    [versionLabel setTextColor:[UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:0.500]];
-    [versionLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:12]];
-
-    UILabel* buildLabel = [[UILabel alloc] initWithFrame:CGRectMake((width/3), 540, (width/3), 20)];
-    [buildLabel setText:build];
-    [buildLabel setTextColor:[UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:0.500]];
-    [buildLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:12]];
-
-    UILabel* copyrightLabel = [[UILabel alloc] initWithFrame:CGRectMake(2*(width/3), 540, (width/3), 20)];
-    [copyrightLabel setText:@"©2014 Musio Pty Ltd"];
-    [copyrightLabel setTextColor:[UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:0.500]];
-    [copyrightLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:12]];
-
-    [[self view] addSubview:copyrightLabel];
-    [[self view] addSubview:versionLabel];
-    [[self view] addSubview:buildLabel];
-
     [[self view] addSubview:[self scrollView]];
 
     [self.navigationController setNavigationBarHidden:NO animated:YES];
@@ -162,18 +139,19 @@
     [Lockbox setString:nil forKey:@"email"];
     [Lockbox setString:nil forKey:@"password"];
     [Lockbox setString:nil forKey:@"uuid"];
-    MusioWelcomeViewController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"WelcomeView"];
+
+    UIViewController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"WelcomeView"];
     [self presentViewController:controller animated:YES completion:^{}];
 }
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Musio Pty Ltd. All rights reserved.
 //
 
-#import "MusioMenuViewController.h"
+#import "MusioSidebarViewController.h"
 
 
-@interface MusioMenuViewController ()
+@interface MusioSidebarViewController ()
 
 @end
 
-@implementation MusioMenuViewController
+@implementation MusioSidebarViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,11 +23,13 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
     [self setLeftPanel: [[self storyboard] instantiateViewControllerWithIdentifier:@"mainMenu"]];
     [self setCenterPanel: [[self storyboard] instantiateViewControllerWithIdentifier:@"mainNavigation"]];
-    [self setRightPanel: [[self storyboard] instantiateViewControllerWithIdentifier:@"mainMenu"]];
+
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

@@ -11,7 +11,7 @@
 #import "SVGKit/SVGKit.h"
 #import "SVGKFastImageView.h"
 #import "UIViewController+JASidePanel.h"
-#import "MusioMenuViewController.h"
+#import "MusioSidebarViewController.h"
 #import <POP/POP.h>
 
 @interface MusioViewController ()
