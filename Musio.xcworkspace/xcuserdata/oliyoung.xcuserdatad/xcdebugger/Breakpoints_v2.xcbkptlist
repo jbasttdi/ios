@@ -101,13 +101,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Musio/MusioUploadTableViewController.m"
-            timestampString = "422176038.153132"
+            filePath = "Musio/MusioUploadsTableViewController.m"
+            timestampString = "422199111.778818"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "@implementation MusioUploadTableViewController"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "@implementation MusioUploadsTableViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>

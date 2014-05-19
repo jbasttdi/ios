@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Musio Pty Ltd. All rights reserved.
 //
 
-#import "MusioUploadTableViewController.h"
+#import "MusioUploadsTableViewController.h"
 
-@interface MusioUploadTableViewController ()
+@interface MusioUploadsTableViewController ()
 @property NSMutableArray *tracks;
 @end
 
-@implementation MusioUploadTableViewController
+@implementation MusioUploadsTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,17 +39,10 @@
                                                             NSForegroundColorAttributeName: [UIColor whiteColor],
                                                             NSFontAttributeName: [UIFont fontWithName:@"NeuzeitGro-Bol" size:24.0f]
                                                             }];
-    [[self tableView] setBackgroundColor:[UIColor blackColor]];
+    [[self tableView] setBackgroundColor: [UIColor colorWithRed:0.125 green:0.125 blue:0.125 alpha:1.000]];
     [[self tableView] setSeparatorColor: [UIColor colorWithRed:0.396 green:0.396 blue:0.396 alpha:0.500]];
-
-
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,11 +51,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
@@ -76,15 +66,19 @@
     NSMutableDictionary* track = [[self tracks] objectAtIndex:indexPath.section];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"uploadViewCell" forIndexPath:indexPath];
 
+    UIImageView *backgroundView = [[UIImageView alloc] initWithFrame:cell.frame];
+    [backgroundView setBackgroundColor:[UIColor colorWithRed:0.169 green:0.169 blue:0.169 alpha:1.000]];
 
-    [cell setBackgroundColor:[UIColor blackColor]];
-    [[cell textLabel] setTextColor:[UIColor whiteColor]];
-    [[cell textLabel] setText:[track valueForKey:@"title"]];
-    [[cell textLabel] setFont:[UIFont fontWithName:@"NeuzeitGro-Bol" size:24]];
+    [cell setSelectedBackgroundView:backgroundView];
+    [cell setBackgroundColor:[UIColor colorWithRed:0.125 green:0.125 blue:0.125 alpha:1.000]];
 
-    [[cell detailTextLabel] setTextColor:[UIColor whiteColor]];
-    [[cell detailTextLabel] setText:[track valueForKey:@"description"]];
-    [[cell detailTextLabel] setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:15]];
+    [[cell textLabel] setTextColor: [UIColor whiteColor]];
+    [[cell textLabel] setText: [track valueForKey:@"title"]];
+    [[cell textLabel] setFont: [UIFont fontWithName:@"NeuzeitGro-Bol" size:24]];
+
+    [[cell detailTextLabel] setTextColor: [UIColor whiteColor]];
+    [[cell detailTextLabel] setText: [track valueForKey:@"description"]];
+    [[cell detailTextLabel] setFont: [UIFont fontWithName:@"NeuzeitGro-Reg" size:15]];
 
     return cell;
 }

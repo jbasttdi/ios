@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MusioUploadTableViewController : UITableViewController
+@interface MusioUploadsTableViewController : UITableViewController
 
 @end
