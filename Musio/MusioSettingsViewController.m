@@ -94,7 +94,7 @@
 
     UISwitch* notificationsSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(220, 10, 40, 50)];
     [notificationsSwitch addTarget:self
-                            action:@selector(toggleNotifications:)
+                            action:@selector(toggleNotifications:self:)
                   forControlEvents:UIControlEventTouchUpInside];
 
     [notificationsToggleView addSubview:notificationsSwitch];
