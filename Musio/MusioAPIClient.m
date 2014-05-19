@@ -7,8 +7,8 @@
 //
 
 #import "MusioAPIClient.h"
-NSString * const kMusioBaseURLString = @"http://api.musio.co";
-//NSString * const kMusioBaseURLString = @"http://localhost:5100";
+//NSString * const kMusioBaseURLString = @"http://api.musio.co";
+NSString * const kMusioBaseURLString = @"http://192.168.1.9:5100";
 
 @implementation MusioAPIClient
 
@@ -51,6 +51,16 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
        }];
 }
 
+- (void)signOut:(NSString *)email
+      withToken:(NSString *)token
+        success:(void (^)(NSURLSessionDataTask *, id))success
+        failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+    [Lockbox setString:nil forKey:@"token"];
+    [Lockbox setString:nil forKey:@"email"];
+    [Lockbox setString:nil forKey:@"password"];
+    [Lockbox setString:nil forKey:@"uuid"];
+}
+
 - (void)signIn:(NSString *)email
   withPassword:(NSString *)password
        success:(void (^)(NSURLSessionDataTask *, id))success
@@ -76,45 +86,63 @@ NSString * const kMusioBaseURLString = @"http://api.musio.co";
              success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
              failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
 
-    if ([Lockbox stringForKey:@"uuid"] != nil) {
+    if (device_token != NULL
+        && [Lockbox stringForKey:@"token"] != nil
+        && [Lockbox stringForKey:@"uuid"] != nil) {
         NSString* path = [NSString stringWithFormat:@"api/v1/users/%@.json", [Lockbox stringForKey:@"uuid"]];
         NSString* device = [NSString stringWithFormat:@"%@",  [[UIDevice currentDevice] model]];
 
-        if (device_token != NULL) {
-            [self PATCH:path
-             parameters:@{@"token": [Lockbox stringForKey:@"token"], @"user": @{@"device_token":device_token, @"device_kind": device }}
-                success:^(NSURLSessionDataTask *task, id responseObject) {
-                    if (success) {
-                        success(task, responseObject);
-                    }
+        [self PATCH:path
+         parameters:@{@"token": [Lockbox stringForKey:@"token"], @"user": @{@"device_token":device_token, @"device_kind": device }}
+            success:^(NSURLSessionDataTask *task, id responseObject) {
+                if (success) {
+                    success(task, responseObject);
                 }
-                failure:^(NSURLSessionDataTask *task, NSError *error) {
-                    if (failure) {
-                        failure(task, error);
-                    }
-                }];
-        }
+            }
+            failure:^(NSURLSessionDataTask *task, NSError *error) {
+                if (failure) {
+                    failure(task, error);
+                }
+            }];
+
     }
+}
+
+- (void)getTracksWithSuccess:(void(^)(NSURLSessionDataTask *task, id responseObject))success
+                     failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
+    NSString* path =  @"api/v1/uploads.json";
+    [self GET:path
+   parameters:@{@"token": [Lockbox stringForKey:@"token"]}
+      success:^(NSURLSessionDataTask *task, id responseObject) {
+          if (success) {
+              success(task, responseObject);
+          }
+      }
+      failure:^(NSURLSessionDataTask *task, NSError *error) {
+          if (failure) {
+              failure(task, error);
+          }
+      }];
 }
 
 - (void)getInbox:(NSString *)user_uuid
          success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
          failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure {
-    
+
     NSString* path =  @"api/v1/inbox.json";
-    
+
     [self GET:path
    parameters:@{@"token": [Lockbox stringForKey:@"token"]}
       success:^(NSURLSessionDataTask *task, id responseObject) {
-        if (success) {
-            success(task, responseObject);
-        }
-    }
+          if (success) {
+              success(task, responseObject);
+          }
+      }
       failure:^(NSURLSessionDataTask *task, NSError *error) {
-        if (failure) {
-            failure(task, error);
-        }
-    }];
+          if (failure) {
+              failure(task, error);
+          }
+      }];
 }
 
 @end

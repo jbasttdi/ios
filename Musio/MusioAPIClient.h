@@ -12,7 +12,7 @@
 extern NSString * const kMusioBaseURLString;
 
 @interface MusioAPIClient : AFHTTPSessionManager
-    + (MusioAPIClient *)sharedClient;
++ (MusioAPIClient *)sharedClient;
 
 - (void)signIn:(NSString *)email
   withPassword:(NSString *)password
@@ -27,12 +27,15 @@ extern NSString * const kMusioBaseURLString;
 
 - (void)signOut:(NSString *)email
       withToken:(NSString *)token
-           success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
-           failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
-
-- (void)getInbox:(NSString *)user_uuid
         success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
         failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+- (void)getInbox:(NSString *)user_uuid
+         success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
+         failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+- (void)getTracksWithSuccess:(void(^)(NSURLSessionDataTask *task, id responseObject))success
+                     failure:(void(^)(NSURLSessionDataTask *task, NSError *error))failure;
 
 - (void)postAPNToken:(NSString *)device_token
                   to:(NSString *)user_uuid
