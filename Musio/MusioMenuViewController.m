@@ -66,8 +66,8 @@
     [helpButton setFrame:CGRectMake(20, 280, 270, 50)];
     [helpButton setTitle:@"Help" forState:UIControlStateNormal];
     [helpButton addTarget:self
-                       action:@selector(helpButtonSelector:)
-             forControlEvents:UIControlEventTouchUpInside];
+                   action:@selector(helpButtonSelector:)
+         forControlEvents:UIControlEventTouchUpInside];
     [[self view] addSubview:helpButton];
 
     UILabel* copyrightLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 540, [UIScreen mainScreen].bounds.size.width, 20)];
@@ -76,6 +76,12 @@
     [copyrightLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:12]];
 
     [[self view] addSubview:copyrightLabel];
+}
+
+- (void) helpButtonSelector:(id)sender {
+    UIViewController* mainNavigation = [[self storyboard] instantiateViewControllerWithIdentifier:@"helpView"];
+    [[self sidePanelController] setCenterPanel: mainNavigation];
+
 }
 
 - (void) inboxButtonSelector:(id)sender {
