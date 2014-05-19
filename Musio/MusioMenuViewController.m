@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Musio Pty Ltd. All rights reserved.
 //
 
-#import "MusioMainMenuViewController.h"
+#import "MusioMenuViewController.h"
 #import "JASidePanelController.h"
 #import "UIViewController+JASidePanel.h"
 
-@implementation MusioMainMenuViewController
+@implementation MusioMenuViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

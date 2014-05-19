@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="1427" y="615"/>
         </scene>
-        <!--Musio Main Menu View Controller-->
+        <!--Musio Menu View Controller-->
         <scene sceneID="onR-1q-ST6">
             <objects>
-                <viewController storyboardIdentifier="mainMenu" id="m8K-xn-Ywh" customClass="MusioMainMenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainMenu" id="m8K-xn-Ywh" customClass="MusioMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fRg-69-jYs"/>
                         <viewControllerLayoutGuide type="bottom" id="oae-Qg-WjJ"/>

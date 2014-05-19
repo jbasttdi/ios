@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MusioMainMenuViewController : UIViewController
+@interface MusioMenuViewController : UIViewController
 
 - (void) inboxButtonSelector:(id)sender;
 - (void) settingsButtonSelector:(id)sender;
