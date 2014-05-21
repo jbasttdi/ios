@@ -7,6 +7,7 @@
 //
 
 #import "MusioUploadsTableViewController.h"
+#import "MusioUploadViewController.h"
 
 @interface MusioUploadsTableViewController ()
 @property NSMutableArray *tracks;
@@ -29,7 +30,6 @@
     [[MusioAPIClient sharedClient] getTracksWithSuccess:^(NSURLSessionDataTask *task, id responseObject) {
         [self setTracks: responseObject];
         [[self tableView] reloadData];
-
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Failure -- %@", error);
     }];
@@ -48,7 +48,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
