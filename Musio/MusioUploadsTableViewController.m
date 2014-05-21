@@ -34,7 +34,7 @@
         NSLog(@"Failure -- %@", error);
     }];
     [[self navigationItem] setTitle:@"Uploads"];
-    [[[self navigationController] navigationBar] setAlpha:0.500];
+    
     [[[self navigationController] navigationBar] setTitleTextAttributes: @{
                                                             NSForegroundColorAttributeName: [UIColor whiteColor],
                                                             NSFontAttributeName: [UIFont fontWithName:@"NeuzeitGro-Bol" size:24.0f]
