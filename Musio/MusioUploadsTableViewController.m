@@ -63,7 +63,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSMutableDictionary* track = [[self tracks] objectAtIndex:indexPath.section];
+    NSMutableDictionary* track = [[self tracks] objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"uploadViewCell" forIndexPath:indexPath];
 
     UIImageView *backgroundView = [[UIImageView alloc] initWithFrame:cell.frame];
