@@ -35,6 +35,7 @@
 		F83D2D6D191D177D008E059D /* MusioAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D2D6C191D177D008E059D /* MusioAPIClient.m */; };
 		F83E60AD192A05BD00473833 /* MusioMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E60AC192A05BD00473833 /* MusioMenuViewController.m */; };
 		F8484822191D108F00FED21C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8484821191D108F00FED21C /* Settings.bundle */; };
+		F8576884192B94D000F9C639 /* MusioUploadStatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8576883192B94D000F9C639 /* MusioUploadStatisticsTableViewController.m */; };
 		F85DBE591928DF200043E2FE /* MusioSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85DBE581928DF200043E2FE /* MusioSidebarViewController.m */; };
 		F85DBE5C1928FC980043E2FE /* MusioUploadsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85DBE5B1928FC980043E2FE /* MusioUploadsTableViewController.m */; };
 		F87B37BA1920E1710041B4D9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87B37B91920E1710041B4D9 /* Storyboard.storyboard */; };
@@ -51,6 +52,8 @@
 		F87B37D81920EFAA0041B4D9 /* TrackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D61920EFAA0041B4D9 /* TrackBackground.png */; };
 		F87B37D91920EFAA0041B4D9 /* TrackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */; };
 		F886632B1923900100087D76 /* play-xl.svg in Resources */ = {isa = PBXBuildFile; fileRef = F88663011923900100087D76 /* play-xl.svg */; };
+		F8B2E448192A45A8004EBAA3 /* logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = F8B2E447192A45A8004EBAA3 /* logo.svg */; };
+		F8B2E44B192A45EA004EBAA3 /* MusioHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B2E44A192A45EA004EBAA3 /* MusioHelpViewController.m */; };
 		F8CC9FE519282C8A0039B396 /* MusioSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC9FE419282C8A0039B396 /* MusioSettingsViewController.m */; };
 		F8F0BF0B18C94FD5005D3A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0A18C94FD5005D3A5C /* Foundation.framework */; };
 		F8F0BF0D18C94FD5005D3A5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0BF0C18C94FD5005D3A5C /* CoreGraphics.framework */; };
@@ -114,6 +117,8 @@
 		F83E60AC192A05BD00473833 /* MusioMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioMenuViewController.m; sourceTree = "<group>"; };
 		F8484821191D108F00FED21C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F84FAC071925BFF6007B3FBB /* Musio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Musio.entitlements; sourceTree = "<group>"; };
+		F8576882192B94D000F9C639 /* MusioUploadStatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioUploadStatisticsTableViewController.h; sourceTree = SOURCE_ROOT; };
+		F8576883192B94D000F9C639 /* MusioUploadStatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioUploadStatisticsTableViewController.m; sourceTree = SOURCE_ROOT; };
 		F85DBE571928DF200043E2FE /* MusioSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioSidebarViewController.h; sourceTree = "<group>"; };
 		F85DBE581928DF200043E2FE /* MusioSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioSidebarViewController.m; sourceTree = "<group>"; };
 		F85DBE5A1928FC980043E2FE /* MusioUploadsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioUploadsTableViewController.h; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 		F87B37D61920EFAA0041B4D9 /* TrackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackBackground.png; sourceTree = "<group>"; };
 		F87B37D71920EFAA0041B4D9 /* TrackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackBackground@2x.png"; sourceTree = "<group>"; };
 		F88663011923900100087D76 /* play-xl.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "play-xl.svg"; sourceTree = "<group>"; };
+		F8B2E447192A45A8004EBAA3 /* logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = logo.svg; sourceTree = "<group>"; };
+		F8B2E449192A45EA004EBAA3 /* MusioHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioHelpViewController.h; sourceTree = "<group>"; };
+		F8B2E44A192A45EA004EBAA3 /* MusioHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioHelpViewController.m; sourceTree = "<group>"; };
 		F8CC9FE319282C8A0039B396 /* MusioSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusioSettingsViewController.h; sourceTree = "<group>"; };
 		F8CC9FE419282C8A0039B396 /* MusioSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusioSettingsViewController.m; sourceTree = "<group>"; };
 		F8F0BF0718C94FD5005D3A5C /* Musio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +189,10 @@
 		F84FAC051925BF86007B3FBB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8576882192B94D000F9C639 /* MusioUploadStatisticsTableViewController.h */,
+				F8576883192B94D000F9C639 /* MusioUploadStatisticsTableViewController.m */,
+				F85DBE5A1928FC980043E2FE /* MusioUploadsTableViewController.h */,
+				F85DBE5B1928FC980043E2FE /* MusioUploadsTableViewController.m */,
 				F81049B0192741AA00447671 /* MusioUploadViewController.h */,
 				F81049B1192741AA00447671 /* MusioUploadViewController.m */,
 				F8F0BF2218C94FD6005D3A5C /* MusioViewController.h */,
@@ -199,8 +211,8 @@
 				F8CC9FE419282C8A0039B396 /* MusioSettingsViewController.m */,
 				F85DBE571928DF200043E2FE /* MusioSidebarViewController.h */,
 				F85DBE581928DF200043E2FE /* MusioSidebarViewController.m */,
-				F85DBE5A1928FC980043E2FE /* MusioUploadsTableViewController.h */,
-				F85DBE5B1928FC980043E2FE /* MusioUploadsTableViewController.m */,
+				F8B2E449192A45EA004EBAA3 /* MusioHelpViewController.h */,
+				F8B2E44A192A45EA004EBAA3 /* MusioHelpViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +242,7 @@
 				F81049C519275D3F00447671 /* Splash.png */,
 				F81049C719275DFA00447671 /* Welcome.png */,
 				F81049C819275DFA00447671 /* Welcome@2x.png */,
+				F8B2E447192A45A8004EBAA3 /* logo.svg */,
 				F81049C319275CA200447671 /* logo.png */,
 				F81049B3192752B400447671 /* neuzeitgroteskbold-webfont.ttf */,
 				F81049B4192752B400447671 /* neuzeitgroteskregular-webfont.ttf */,
@@ -386,7 +399,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Musio;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Musio Pty Ltd";
 				TargetAttributes = {
 					F8F0BF0618C94FD5005D3A5C = {
@@ -448,6 +461,7 @@
 				F87B37C31920E45D0041B4D9 /* Main.png in Resources */,
 				F81049DA1927649500447671 /* Go.png in Resources */,
 				F81049D71927632E00447671 /* Sign In@2x.png in Resources */,
+				F8B2E448192A45A8004EBAA3 /* logo.svg in Resources */,
 				F81049C019275BD100447671 /* btnSign In@2x.png in Resources */,
 				F81217F518C955F800FD5FA8 /* Images.xcassets in Resources */,
 				F81049E11927897300447671 /* Sign Up.png in Resources */,
@@ -516,6 +530,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83E60AD192A05BD00473833 /* MusioMenuViewController.m in Sources */,
+				F8B2E44B192A45EA004EBAA3 /* MusioHelpViewController.m in Sources */,
+				F8576884192B94D000F9C639 /* MusioUploadStatisticsTableViewController.m in Sources */,
 				F8F0BF1B18C94FD6005D3A5C /* MusioAppDelegate.m in Sources */,
 				F85DBE591928DF200043E2FE /* MusioSidebarViewController.m in Sources */,
 				F81049B2192741AA00447671 /* MusioUploadViewController.m in Sources */,
@@ -573,7 +589,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -613,7 +628,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -682,7 +696,6 @@
 		F8F0BF4018C94FD6005D3A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Musio.app/Musio";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -705,7 +718,6 @@
 		F8F0BF4118C94FD6005D3A5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Musio.app/Musio";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
