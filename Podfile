@@ -1,4 +1,5 @@
 platform :ios, '7.0'
+pod 'AFSoundManager', '~> 1.1.1'
 pod 'JASidePanels'
 pod 'CocoaLumberjack'
 pod 'AFNetworking', '2.2.1'

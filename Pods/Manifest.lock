@@ -18,6 +18,7 @@ PODS:
   - AFNetworking/UIKit (2.2.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AFSoundManager (1.1.1)
   - CocoaLumberjack (1.8.1):
     - CocoaLumberjack/Extensions
   - CocoaLumberjack/Core (1.8.1)
@@ -34,6 +35,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
+  - AFSoundManager (~> 1.1.1)
   - CocoaLumberjack
   - GroundControl (~> 2.1.0)
   - JASidePanels
@@ -48,14 +50,15 @@ EXTERNAL SOURCES:
     :podspec: https://gist.github.com/marcdown/5282955/raw/2a52cfd92f112f2a52669420c82c1bb1efd15d2a/JSONKit.podspec
 
 SPEC CHECKSUMS:
-  AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
-  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
-  GroundControl: 6c9ad5f196e61ada7624d5acfbfe0f714d6c7e27
-  JASidePanels: c0e642a7311ec9cc9adfa616fa4a795e4e169f20
+  AFNetworking: 8dde8c8a6597ad95dac332a593c27e541bc87371
+  AFSoundManager: 986610e8df00f80402943b3d1988bc21647bda84
+  CocoaLumberjack: 9d198d6e19909b3b113a38c5f06f7bb8eedd0427
+  GroundControl: 2f9024230e41ff5e5a8e3ca060ed1b74883bdd1a
+  JASidePanels: ca943907d88a0738c80755204c6098969d43e4e9
   JSONKit: 98c50800be324836e4443f6d22ff1324caffa608
-  Lockbox: 33fad03fc7dd73e53f7108d9abff6fa0cfa1058b
-  pop: 63a4f5e8942077fed2efe195036ecc572c71c48c
-  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  SVGKit: 6b3af07b4200f5b4beb6b81996b3b8e985936cb9
+  Lockbox: 084d2fd833c7a271892f70d0db4d4d3da233de18
+  pop: 626af22f9f3b6eb866141a1af7bfd909dac1851e
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  SVGKit: 00fc35a746e8eaf20cb020361fb28784ca1c8673
 
 COCOAPODS: 0.32.1
