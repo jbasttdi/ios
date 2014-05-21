@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MusioUploadViewController : UIViewController
+@property (strong, nonatomic) NSMutableDictionary* track;
+
+- (void)share:(id)sender;
+- (void)playTouch:(id)sender;
 
 @end
