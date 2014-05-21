@@ -75,17 +75,15 @@
 
 - (void)playTouch:(id)sender
 {
+    ;
+    NSString *path = [NSString stringWithFormat:@"%@%@.m4a", [[NSUserDefaults standardUserDefaults] valueForKeyPath:@"path"], [[self track] valueForKeyPath:@"wavefile_uuid"]];
+    NSLog(@"Playing: %@", path);
 
-    [[AFSoundManager sharedManager]startStreamingRemoteAudioFromURL:@"http://www.example.com/audio/file.mp3" andBlock:^(int percentage, CGFloat elapsedTime, CGFloat timeRemaining, NSError *error) {
+    [[AFSoundManager sharedManager] startStreamingRemoteAudioFromURL:path andBlock:^(int percentage, CGFloat elapsedTime, CGFloat timeRemaining, NSError *error, BOOL finished) {
+        NSLog(@"%d", percentage);
+        NSLog(@"%@", error);
+    }];
 
-        if (!error)
-            //This block will be fired when the audio progress increases in 1%
-            } else {
-                //Handle the error
-            }
-     }];
-    
-    NSLog(@"Play Touch");
 }
 - (void)share:(id)sender
 {
