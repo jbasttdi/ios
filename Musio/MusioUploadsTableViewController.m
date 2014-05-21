@@ -83,5 +83,12 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+     MusioUploadViewController * destination = [segue destinationViewController];
+     [destination setTrack:[[self tracks] objectAtIndex:indexPath.row]];
+ }
+
 
 @end
