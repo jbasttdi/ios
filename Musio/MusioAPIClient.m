@@ -7,8 +7,11 @@
 //
 
 #import "MusioAPIClient.h"
-//NSString * const kMusioBaseURLString = @"http://api.musio.co";
+#if TARGET_CPU_ARM
+NSString * const kMusioBaseURLString = @"http://api.musio.co";
+#else
 NSString * const kMusioBaseURLString = @"http://192.168.1.9:5100";
+#endif
 
 @implementation MusioAPIClient
 

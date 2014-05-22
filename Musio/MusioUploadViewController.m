@@ -7,7 +7,6 @@
 //
 
 #import "MusioUploadViewController.h"
-#import "MusioUploadStatisticsTableViewController.h"
 #import "SVGKit/SVGKit.h"
 #import "SVGKFastImageView.h"
 #import "AFSoundManager.h"
@@ -63,13 +62,6 @@
     [playImageContainer addSubview:playImageView];
     [[self view] addSubview: playImageContainer];
 
-    MusioUploadStatisticsTableViewController* statisticsTableView = [MusioUploadStatisticsTableViewController alloc];
-    UITableView *statisticsView = [[UITableView alloc] initWithFrame:CGRectMake(0, (height/2), width, height / 2)];
-    [statisticsView setBackgroundColor: [UIColor colorWithRed:0.125 green:0.125 blue:0.125 alpha:1.000]];
-    [statisticsView setSeparatorColor: [UIColor colorWithRed:0.396 green:0.396 blue:0.396 alpha:0.500]];
-    [statisticsView setDelegate: statisticsTableView];
-
-    [[self view] addSubview:statisticsView];
 
 }
 

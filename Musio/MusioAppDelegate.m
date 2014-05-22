@@ -17,8 +17,8 @@
     [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent];
     [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval: UIApplicationBackgroundFetchIntervalMinimum];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
-
-    Reachability* reach = [Reachability reachabilityWithHostname:@"api.musio.co"];
+    NSLog(@"%@", kMusioBaseURLString);
+    Reachability* reach = [Reachability reachabilityWithHostname:kMusioBaseURLString];
     reach.unreachableBlock = ^(Reachability*reach) {
         NSLog(@"UNREACHABLE!");
     };
@@ -27,12 +27,12 @@
     // Override point for customization after application launch.
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
 
-    NSURL *URL = [NSURL URLWithString:@"http://api.musio.co/api/v1/devices/iphone.plist"];
-    [[NSUserDefaults standardUserDefaults] registerDefaultsWithURL:URL success:^(NSDictionary *defaults) {
-        NSLog(@"Defaults > %@", defaults);
-    } failure:^(NSError *error) {
-        NSLog(@"Error > %@ with user info %@.", error, [error userInfo]);
-    }];
+    NSURL *userDefaultsURL = [NSURL URLWithString: [NSString stringWithFormat:@"%@/api/v1/devices/iphone.plist", kMusioBaseURLString] ];
+    [[NSUserDefaults standardUserDefaults]
+     registerDefaultsWithURL:userDefaultsURL
+     success:^(NSDictionary *defaults) {}
+     failure:^(NSError *error) {}
+     ];
 
     return YES;
 }
