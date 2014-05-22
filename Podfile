@@ -1,6 +1,8 @@
 platform :ios, '7.0'
 inhibit_all_warnings!
+pod 'SVGKit', '~> 1.0'
 pod 'AFSoundManager', '~> 1.1.1'
+pod 'TestFlightSDK' 
 pod 'JASidePanels'
 pod 'CocoaLumberjack'
 pod 'AFNetworking', '2.2.1'

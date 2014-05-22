@@ -32,6 +32,7 @@ PODS:
   - pop (1.0.5)
   - Reachability (3.1.1)
   - SVGKit (1.0)
+  - TestFlightSDK (3.0.2)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
@@ -44,6 +45,8 @@ DEPENDENCIES:
   - pop (~> 1.0)
   - Reachability (~> 3.0)
   - SVGKit
+  - SVGKit (~> 1.0)
+  - TestFlightSDK
 
 EXTERNAL SOURCES:
   JSONKit:
@@ -60,5 +63,6 @@ SPEC CHECKSUMS:
   pop: 75fa2b33934200a8a68abb449ac1726fcf7e43b9
   Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   SVGKit: 00fc35a746e8eaf20cb020361fb28784ca1c8673
+  TestFlightSDK: 0c24c533748d0d84bfe7a3cb6036fa79124d84ee
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1
