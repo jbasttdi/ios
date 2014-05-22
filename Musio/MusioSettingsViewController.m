@@ -51,12 +51,6 @@
     [self setScrollView:[[UIScrollView alloc] initWithFrame: CGRectMake(0, 00, width, 470)]];
     [self setSettingsForm:[[UIView alloc] initWithFrame: CGRectMake(0, 0, width, 2000)]];
 
-
-    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithTitle:@"Sign Out."
-                                                                   style:UIBarButtonItemStylePlain
-                                                                  target:self
-                                                                  action:@selector(signOut)];
-
     [self setNameField: [[UITextField alloc] initWithFrame: CGRectMake(20, 80, (width - 40), 50)]];
     [[self nameField] setBackgroundColor:backgroundColor];
     [[self nameField] setFont:font];
@@ -93,12 +87,12 @@
     [notificationsToggleLabel setFont:font];
 
     UISwitch* notificationsSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(220, 10, 40, 50)];
-//    [notificationsSwitch addTarget:self
-//                            action:@selector(toggleNotifications:)
-//                  forControlEvents:UIControlEventTouchUpInside];
+    [notificationsSwitch addTarget:self
+                            action:@selector(toggleNotifications:)
+                  forControlEvents:UIControlEventTouchUpInside];
     [notificationsToggleView addSubview:notificationsSwitch];
     [notificationsToggleView addSubview:notificationsToggleLabel];
-    [[self scrollView] addSubview:notificationsToggleView];
+    [[self settingsForm] addSubview:notificationsToggleView];
 
     self.scrollView.contentSize = self.settingsForm.bounds.size;
     [[self scrollView] addSubview:[self settingsForm]];
@@ -106,7 +100,6 @@
     [[self view] addSubview:[self scrollView]];
 
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [[self navigationItem] setRightBarButtonItem:saveButton];
     [super viewWillAppear:animated];
 }
 
@@ -118,7 +111,7 @@
     [self saveSettings];
 }
 
-- (void)toggleNotications:(id)sender
+- (void)toggleNotifications:(id)sender
 {
     if([sender isOn]){
         NSLog(@"Notifications On");
@@ -132,25 +125,5 @@
     NSLog(@"Save Settings");
 }
 
-- (void)signOut
-{
-    [Lockbox setString:nil forKey:@"token"];
-    [Lockbox setString:nil forKey:@"email"];
-    [Lockbox setString:nil forKey:@"password"];
-    [Lockbox setString:nil forKey:@"uuid"];
-
-    UIViewController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"WelcomeView"];
-    [self presentViewController:controller animated:YES completion:^{}];
-}
-/*
- #pragma mark - Navigation
-
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end

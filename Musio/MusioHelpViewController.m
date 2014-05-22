@@ -33,6 +33,11 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    UILabel* copyrightLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 535, [UIScreen mainScreen].bounds.size.width, 20)];
+    [copyrightLabel setText:@"©2014 Musio Pty Ltd"];
+    [copyrightLabel setTextColor:[UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:1.000]];
+    [copyrightLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:12]];
+    [[self view] addSubview:copyrightLabel];
 
 }
 

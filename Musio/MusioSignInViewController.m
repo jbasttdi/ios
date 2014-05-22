@@ -107,20 +107,17 @@
     [client signIn:[[self emailField] text]
       withPassword:[[self passwordField] text]
            success:^(NSURLSessionDataTask *task, id responseObject) {
-                NSMutableDictionary* session = [[NSMutableDictionary alloc] initWithDictionary: (NSMutableDictionary *)responseObject];
-                NSLog(@"%@", session);
-                [Lockbox setString:[[self emailField] text] forKey:@"email"];
-                [Lockbox setString:[[self passwordField] text] forKey:@"password"];
-                [Lockbox setString:[session objectForKey:@"uuid"]  forKey:@"uuid"];
-                [Lockbox setString:[session objectForKey:@"token"] forKey:@"token"];
-
+               NSMutableDictionary* session = [[NSMutableDictionary alloc] initWithDictionary: (NSMutableDictionary *)responseObject];
+               NSLog(@"%@", session);
+               [Lockbox setString:[[self emailField] text] forKey:@"email"];
+               [Lockbox setString:[[self passwordField] text] forKey:@"password"];
+               [Lockbox setString:[session objectForKey:@"uuid"]  forKey:@"uuid"];
+               [Lockbox setString:[session objectForKey:@"token"] forKey:@"token"];
                UINavigationController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"mainNavigation"];
                [self presentViewController:controller animated:YES completion:^{}];
-
-
            }
            failure:^(NSURLSessionDataTask *task, NSError *error) {
-               UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Something's Gone Horribly Wrong"
+               UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Something's Gone Wrong"
                                                                    message:[error localizedDescription]
                                                                   delegate:nil
                                                          cancelButtonTitle:@"Ok"
@@ -129,14 +126,14 @@
            }];
 }
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

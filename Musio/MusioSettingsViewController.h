@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MusioSettingsViewController : UIViewController <UITextFieldDelegate>
-- (void)signOut;
 - (void)saveSettings;
-- (void)toggleNotications:(id)sender;
+- (void)toggleNotifications:(id)sender;
 @end

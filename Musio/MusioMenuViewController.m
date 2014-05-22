@@ -59,6 +59,17 @@
              forControlEvents:UIControlEventTouchUpInside];
     [[self view] addSubview:settingsButton];
 
+    UIButton* logoutButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [[logoutButton titleLabel] setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:15]];
+    [logoutButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [logoutButton setContentEdgeInsets: UIEdgeInsetsMake(0, 10, 0, 0)];
+    [logoutButton setFrame:CGRectMake(20, 520, 270, 50)];
+    [logoutButton setTitle:@"Log Out" forState:UIControlStateNormal];
+    [logoutButton addTarget:self
+                       action:@selector(logoutButtonSelector:)
+             forControlEvents:UIControlEventTouchUpInside];
+    [[self view] addSubview:logoutButton];
+
     UIButton* helpButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [[helpButton titleLabel] setFont:font];
     [helpButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
@@ -70,17 +81,22 @@
          forControlEvents:UIControlEventTouchUpInside];
     [[self view] addSubview:helpButton];
 
-    UILabel* copyrightLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 540, [UIScreen mainScreen].bounds.size.width, 20)];
-    [copyrightLabel setText:@"©2014 Musio Pty Ltd"];
-    [copyrightLabel setTextColor:[UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:1.000]];
-    [copyrightLabel setFont:[UIFont fontWithName:@"NeuzeitGro-Reg" size:12]];
+}
 
-    [[self view] addSubview:copyrightLabel];
+- (void) logoutButtonSelector:(id)sender {
+    [Lockbox setString:nil forKey:@"token"];
+    [Lockbox setString:nil forKey:@"email"];
+    [Lockbox setString:nil forKey:@"password"];
+    [Lockbox setString:nil forKey:@"uuid"];
+
+    UIViewController* controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"WelcomeView"];
+    [self presentViewController:controller animated:YES completion:^{}];
+
 }
 
 - (void) helpButtonSelector:(id)sender {
-    UIViewController* mainNavigation = [[self storyboard] instantiateViewControllerWithIdentifier:@"helpView"];
-    [[self sidePanelController] setCenterPanel: mainNavigation];
+    UIViewController* helpViewNavigation = [[self storyboard] instantiateViewControllerWithIdentifier:@"helpView"];
+    [[self sidePanelController] setCenterPanel: helpViewNavigation];
 
 }
 
