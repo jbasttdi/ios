@@ -1,4 +1,5 @@
 platform :ios, '7.0'
+inhibit_all_warnings!
 pod 'AFSoundManager', '~> 1.1.1'
 pod 'JASidePanels'
 pod 'CocoaLumberjack'

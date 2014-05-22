@@ -93,10 +93,9 @@
     [notificationsToggleLabel setFont:font];
 
     UISwitch* notificationsSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(220, 10, 40, 50)];
-    [notificationsSwitch addTarget:self
-                            action:@selector(toggleNotifications:self:)
-                  forControlEvents:UIControlEventTouchUpInside];
-
+//    [notificationsSwitch addTarget:self
+//                            action:@selector(toggleNotifications:)
+//                  forControlEvents:UIControlEventTouchUpInside];
     [notificationsToggleView addSubview:notificationsSwitch];
     [notificationsToggleView addSubview:notificationsToggleLabel];
     [[self scrollView] addSubview:notificationsToggleView];

@@ -29,7 +29,7 @@
 - (void)viewWillAppear:(BOOL)animated {
 
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+//    CGFloat height = [UIScreen mainScreen].bounds.size.height;
 
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc]
                                     initWithTitle:@"Share"

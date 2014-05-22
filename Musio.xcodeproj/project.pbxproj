@@ -305,12 +305,11 @@
 		F8F0BF1018C94FD5005D3A5C /* Musio */ = {
 			isa = PBXGroup;
 			children = (
-				F84FAC071925BFF6007B3FBB /* Musio.entitlements */,
+				F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */,
+				F8F0BF1A18C94FD6005D3A5C /* MusioAppDelegate.m */,
 				F84FAC061925BFA1007B3FBB /* Models */,
 				F84FAC051925BF86007B3FBB /* Controllers */,
 				F87B37C51920EC800041B4D9 /* Images */,
-				F8F0BF1918C94FD6005D3A5C /* MusioAppDelegate.h */,
-				F8F0BF1A18C94FD6005D3A5C /* MusioAppDelegate.m */,
 				F8F0BF1118C94FD5005D3A5C /* Supporting Files */,
 				F87B37B91920E1710041B4D9 /* Storyboard.storyboard */,
 			);
@@ -320,6 +319,7 @@
 		F8F0BF1118C94FD5005D3A5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F84FAC071925BFF6007B3FBB /* Musio.entitlements */,
 				F8484821191D108F00FED21C /* Settings.bundle */,
 				F8F0BF1218C94FD5005D3A5C /* Musio-Info.plist */,
 				F8F0BF1318C94FD5005D3A5C /* InfoPlist.strings */,
